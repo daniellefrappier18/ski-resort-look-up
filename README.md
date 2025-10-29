@@ -47,49 +47,20 @@ npm run dev
 4. Open [http://localhost:5173](http://localhost:5173) in your browser
 
 ## Project Structure
+Placeholder
 
-```
-src/
-├── components/          # React components
-│   ├── SkiResortSearch.tsx    # Main search interface
-│   ├── SearchForm.tsx         # Search and filter form
-│   └── SkiResortCard.tsx      # Individual resort display
-├── data/               # Sample data
-│   └── ski-resorts.ts         # New England ski resort data
-├── graphql/            # GraphQL queries and mutations
-│   └── queries.ts             # Example GraphQL operations
-├── hooks/              # Custom React hooks
-│   └── useSkiResorts.ts       # GraphQL data fetching hooks
-├── types/              # TypeScript type definitions
-│   └── ski-resort.ts          # Resort and search interfaces
-├── apollo-client.ts    # Apollo Client configuration
-├── App.tsx            # Main app component
-└── main.tsx           # App entry point
-```
+## API Integration
 
-## Sample Ski Resorts Included
+Placeholder
 
-The app currently includes data for these popular New England ski areas:
+### RapidAPI Setup (Recommended)
+The app is configured to fetch data from a RapidAPI endpoint and falls back to sample data if unavailable.
 
-- **Vermont**: Killington Resort, Stowe Mountain Resort
-- **New Hampshire**: Cannon Mountain, Loon Mountain Resort
-- **Maine**: Sunday River
-- **Massachusetts**: Wachusett Mountain
+**To configure your RapidAPI endpoint:**
+1. See detailed instructions in `API_SETUP.md`
+2. Update the configuration in `src/config/api.ts`
+3. The app will automatically use real API data when available
 
-Each resort includes:
-- Elevation data (base, summit, vertical drop)
-- Lift counts (chairlifts, gondolas, surface lifts)
-- Trail counts by difficulty level
-- Skiable acres and snowmaking coverage
-- Pricing and contact information
-
-## GraphQL Integration
-
-The project is set up with Apollo Client and includes example GraphQL queries. To integrate with a real GraphQL API:
-
-1. Update the GraphQL endpoint in `src/apollo-client.ts`
-2. Use the provided queries in `src/graphql/queries.ts`
-3. Replace the sample data with the GraphQL hooks in `src/hooks/useSkiResorts.ts`
 
 ## Available Scripts
 
@@ -97,32 +68,6 @@ The project is set up with Apollo Client and includes example GraphQL queries. T
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
-
-## Features in Development
-
-- [ ] Integration with real ski resort API
-- [ ] Weather and snow conditions
-- [ ] Interactive maps with resort locations
-- [ ] Lift ticket price comparisons
-- [ ] User favorites and trip planning
-- [ ] Real-time lift and trail status
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/new-feature`
-3. Commit your changes: `git commit -am 'Add new feature'`
-4. Push to the branch: `git push origin feature/new-feature`
-5. Submit a pull request
-
-## Data Sources
-
-Current data is compiled from public resort websites and marketing materials. For a production app, consider integrating with:
-
-- Resort APIs for real-time conditions
-- Weather services for forecasts
-- Mapping services for location data
-- Third-party ski data providers
 
 ## License
 
@@ -136,5 +81,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-Happy skiing! 🎿⛷️
+Happy riding and skiing! 🎿⛷️
 ```
