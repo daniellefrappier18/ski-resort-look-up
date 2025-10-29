@@ -1,0 +1,281 @@
+/* Ski Resort Explorer Styles */
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Search Header */
+.search-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.search-header h1 {
+  color: #2c5aa0;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.search-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Search Form */
+.search-form {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+}
+
+.search-input-group {
+  margin-bottom: 1.5rem;
+}
+
+.search-input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.search-input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.filters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.clear-filters-btn {
+  background: #dc3545;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.clear-filters-btn:hover {
+  background: #c82333;
+}
+
+/* Results */
+.results-summary {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.resort-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Ski Resort Cards */
+.ski-resort-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ski-resort-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card-header h3 {
+  color: #2c5aa0;
+  margin: 0 0 0.25rem 0;
+  font-size: 1.3rem;
+}
+
+.card-header .location {
+  color: #666;
+  margin: 0 0 1rem 0;
+  font-style: italic;
+}
+
+.card-content h4 {
+  color: #333;
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.25rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0;
+}
+
+.stat .label {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.stat .value {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* Trail Difficulty Bars */
+.difficulty-bars {
+  margin-top: 0.5rem;
+}
+
+.difficulty-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  gap: 0.5rem;
+}
+
+.difficulty-label {
+  font-size: 0.8rem;
+  min-width: 80px;
+  color: #666;
+}
+
+.difficulty-bar {
+  flex: 1;
+  height: 8px;
+  background: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.difficulty-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.difficulty-fill.beginner { background: #28a745; }
+.difficulty-fill.intermediate { background: #007bff; }
+.difficulty-fill.advanced { background: #ffc107; }
+.difficulty-fill.expert { background: #dc3545; }
+
+.difficulty-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  min-width: 25px;
+  text-align: right;
+  color: #333;
+}
+
+.additional-info {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.description {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.description p {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.card-footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.website-link {
+  background: #2c5aa0;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  display: inline-block;
+  transition: background 0.2s;
+}
+
+.website-link:hover {
+  background: #1e4080;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+.no-results p {
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    padding: 1rem;
+  }
+  
+  .filters-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .resort-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .difficulty-item {
+    flex-wrap: wrap;
+  }
+}
