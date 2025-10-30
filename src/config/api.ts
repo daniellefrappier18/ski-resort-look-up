@@ -5,30 +5,28 @@ export const API_CONFIG = {
   // Your RapidAPI Key
   RAPIDAPI_KEY: '3dc6c1d1fcmshb082b065cac2ddfp159c04jsn1d3e546640a2',
   
-  // Base URL - replace with the actual ski resort API endpoint
-  // Example: https://ski-resorts-and-conditions.p.rapidapi.com
-  BASE_URL: 'https://api.skiapi.com/v1',
+  // Ski Resorts And Conditions API from RapidAPI (correct URL from screenshot)
+  BASE_URL: 'https://ski-resorts-and-conditions.p.rapidapi.com',
   
-  // RapidAPI Host - replace with the actual host from your RapidAPI dashboard
-  // Example: ski-resorts-and-conditions.p.rapidapi.com
-  RAPIDAPI_HOST: 'rapidapi.com',
+  // RapidAPI Host for Ski Resorts And Conditions API
+  RAPIDAPI_HOST: 'ski-resorts-and-conditions.p.rapidapi.com',
   
-  // Endpoints - these should match your actual API structure
+  // Endpoints from the Ski Resorts And Conditions API
   ENDPOINTS: {
-    ALL_RESORTS: '/resorts',
-    SINGLE_RESORT: '/resort', // Will be used as /resort/{id}
-    SEARCH_RESORTS: '/resorts/search',
+    ALL_RESORTS: '/',           // Index endpoint to get all resorts
+    SINGLE_RESORT: '/resort',   // Resort View endpoint
+    SEARCH_RESORTS: '/resorts', // Resorts endpoint
+    STATES: '/states',
+    RESORT_IDS: '/resort_ids',
   },
 };
 
 // Environment-based configuration
 export const getApiConfig = () => {
-  const isDevelopment = import.meta.env.MODE === 'development';
-  
   return {
     ...API_CONFIG,
-    // In development, you might want to use mock data or different endpoints
-    USE_FALLBACK_DATA: isDevelopment, // Set to true to always use fallback data during development
+    // Now using the real Ski Resort Conditions API from RapidAPI
+    USE_FALLBACK_DATA: false, // Set to true to use fallback data instead of real API
   };
 };
 
