@@ -43,12 +43,33 @@ const SearchForm: React.FC<SearchFormProps> = ({
             onChange={(e) => handleFilterChange('state', e.target.value)}
           >
             <option value="">All States</option>
-            <option value="Vermont">Vermont</option>
-            <option value="New Hampshire">New Hampshire</option>
+            <option value="Alaska">Alaska</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Idaho">Idaho</option>
             <option value="Maine">Maine</option>
             <option value="Massachusetts">Massachusetts</option>
-            <option value="Connecticut">Connecticut</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Montana">Montana</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
             <option value="Rhode Island">Rhode Island</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Utah">Utah</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Washington">Washington</option>
+            <option value="West Virginia">West Virginia</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Wyoming">Wyoming</option>
           </select>
         </div>
 

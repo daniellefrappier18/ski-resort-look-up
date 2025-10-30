@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import type { SkiResort, SearchFilters } from '../types/ski-resort';
-import { SkiResortAPI, fallbackResorts } from '../services/skiResortAPI';
+import { SkiResortAPI } from '../services/skiResortAPI';
 
 interface UseSkiResortsFromAPI {
   resorts: SkiResort[];
@@ -22,9 +22,9 @@ export const useSkiResortsFromAPI = (): UseSkiResortsFromAPI => {
       const data = await SkiResortAPI.getAllResorts();
       setResorts(data);
     } catch (err) {
-      console.error('Failed to fetch resorts from API, using fallback data:', err);
-      setError('Failed to load ski resort data from API. Using cached data.');
-      setResorts(fallbackResorts);
+      console.error('Failed to fetch resorts from API:', err);
+      setError('Failed to load ski resort data from API.');
+      setResorts([]); // Empty array as fallback
     } finally {
       setLoading(false);
     }
@@ -59,7 +59,7 @@ export const useSearchSkiResortsFromAPI = (): UseSearchSkiResortsFromAPI => {
     setError(null);
     
     try {
-      const data = await SkiResortAPI.searchResorts(searchTerm, filters as Record<string, unknown>);
+      const data = await SkiResortAPI.searchResorts(searchTerm || '', filters);
       setResorts(data);
     } catch (err) {
       console.error('Failed to search resorts from API:', err);
