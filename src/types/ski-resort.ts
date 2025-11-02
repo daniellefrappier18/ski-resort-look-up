@@ -4,50 +4,38 @@ export interface SkiResort {
   id: string;
   name: string;
   location: {
-    state: string;
-    city?: string;
-    coordinates?: {
+    state: string | null;
+    city: string | null;
+    coordinates: {
       latitude: number;
       longitude: number;
-    };
+    } | null;
   };
   elevation: {
-    base: number; // feet above sea level
-    summit: number; // feet above sea level
-    vertical: number; // vertical drop in feet
+    base: number | null;
+    summit: number | null;
+    vertical: number | null;
   };
   lifts: {
-    total: number;
-    chairlifts: number;
-    surfaceLifts: number;
-    gondolas?: number;
-    funiculars?: number;
+    total: number | null;
+    chairlifts: number | null;
+    surfaceLifts: number | null;
+    gondolas: number | null;
+    funiculars: number | null;
+    fixedGripOnly: boolean | null;
   };
   trails: {
-    total: number;
-    beginner: number;
-    intermediate: number;
-    advanced: number;
-    expert: number;
+    total: number | null;
+    beginner: number | null;
+    intermediate: number | null;
+    advanced: number | null;
+    expert: number | null;
   };
-  skiableAcres: number;
-  snowmaking: {
-    percentage: number; // percentage of trails with snowmaking
-    acres?: number;
-  };
-  seasonDates?: {
-    opening?: string; // typical opening date
-    closing?: string; // typical closing date
-  };
-  website?: string;
-  phoneNumber?: string;
-  description?: string;
-  amenities?: string[];
-  liftTicketPrice?: {
-    adult: number;
-    child?: number;
-    senior?: number;
-  };
+  skiableAcres: number | null;
+  seasonDates: string | null;
+  website: string | null;
+  phoneNumber: string | null;
+  liftTicketPrice: number | null;
 }
 
 export interface SearchFilters {
@@ -57,6 +45,7 @@ export interface SearchFilters {
   minLifts?: number;
   minTrails?: number;
   minSkiableAcres?: number;
+  fixedGripOnly?: boolean; // Filter for resorts with only fixed-grip chairlifts
 }
 
 export interface LiftStats {
@@ -75,6 +64,5 @@ export interface TrailStats {
   difficulty: 'beginner' | 'intermediate' | 'advanced' | 'expert';
   length: number; // feet
   verticalDrop: number; // feet
-  averageGrade: number; // percentage
-  hasSnowmaking: boolean;
+  averageGrade: number; // percentage;
 }

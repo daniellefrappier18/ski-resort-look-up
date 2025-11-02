@@ -26,26 +26,30 @@ const SkiResortSearch: React.FC = () => {
 
       // Filter by elevation
       const matchesMinElevation = !filters.minElevation || 
-        resort.elevation.summit >= filters.minElevation;
+        (resort.elevation.summit !== null && resort.elevation.summit >= filters.minElevation);
 
       const matchesMaxElevation = !filters.maxElevation || 
-        resort.elevation.summit <= filters.maxElevation;
+        (resort.elevation.summit !== null && resort.elevation.summit <= filters.maxElevation);
 
       // Filter by lifts
       const matchesMinLifts = !filters.minLifts || 
-        resort.lifts.total >= filters.minLifts;
+        (resort.lifts.total !== null && resort.lifts.total >= filters.minLifts);
 
       // Filter by trails
       const matchesMinTrails = !filters.minTrails || 
-        resort.trails.total >= filters.minTrails;
+        (resort.trails.total !== null && resort.trails.total >= filters.minTrails);
 
       // Filter by skiable acres
       const matchesMinAcres = !filters.minSkiableAcres || 
-        resort.skiableAcres >= filters.minSkiableAcres;
+        (resort.skiableAcres !== null && resort.skiableAcres >= filters.minSkiableAcres);
+
+      // Filter by fixed-grip only
+      const matchesFixedGripOnly = !filters.fixedGripOnly || 
+        resort.lifts.fixedGripOnly === true;
 
       return matchesSearch && matchesState && matchesMinElevation && 
              matchesMaxElevation && matchesMinLifts && matchesMinTrails && 
-             matchesMinAcres;
+             matchesMinAcres && matchesFixedGripOnly;
     });
   }, [searchTerm, filters, apiResorts]);
 

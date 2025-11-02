@@ -1,9 +1,26 @@
-/* Ski Resort Explorer Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+   background-image: url('./assets/chris-biron-JVtcrWcbj1c-unsplash.jpg');
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+#root {
+  margin: 0 auto;
+}
 
 .App {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+
 }
 
 /* Search Header */
@@ -13,13 +30,13 @@
 }
 
 .search-header h1 {
-  color: #2c5aa0;
+  color: #fff;
   margin-bottom: 0.5rem;
   font-size: 2.5rem;
 }
 
 .search-header p {
-  color: #666;
+  color: #fff;
   font-size: 1.1rem;
 }
 
@@ -53,8 +70,8 @@
 
 .filters-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -89,11 +106,51 @@
   background: #c82333;
 }
 
+/* Checkbox filter styles */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  display: flex !important;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0 !important;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto !important;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+}
+
+.checkbox-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Fixed-grip indicator */
+.fixed-grip-indicator {
+  grid-column: span 2;
+}
+
+.fixed-grip {
+  background: #e8f4ff;
+  color: #2c5aa0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
 /* Results */
 .results-summary {
   margin-bottom: 1rem;
   font-weight: 600;
-  color: #333;
+  background-color: rgba(4, 59, 92,0.4);
+  padding: 0.5rem;
+  color: #fff;
 }
 
 .resort-grid {
@@ -140,7 +197,7 @@
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 0.5rem;
   margin-bottom: 1rem;
 }

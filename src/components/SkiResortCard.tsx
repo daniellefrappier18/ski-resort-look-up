@@ -21,19 +21,19 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
           <div className="stats-grid">
             <div className="stat">
               <span className="label">Summit:</span>
-              <span className="value">{resort.elevation.summit.toLocaleString()} ft</span>
+              <span className="value">{resort.elevation.summit ? `${resort.elevation.summit.toLocaleString()} ft` : 'N/A'}</span>
             </div>
             <div className="stat">
               <span className="label">Base:</span>
-              <span className="value">{resort.elevation.base.toLocaleString()} ft</span>
+              <span className="value">{resort.elevation.base ? `${resort.elevation.base.toLocaleString()} ft` : 'N/A'}</span>
             </div>
             <div className="stat">
               <span className="label">Vertical:</span>
-              <span className="value">{resort.elevation.vertical.toLocaleString()} ft</span>
+              <span className="value">{resort.elevation.vertical ? `${resort.elevation.vertical.toLocaleString()} ft` : 'N/A'}</span>
             </div>
             <div className="stat">
               <span className="label">Skiable Acres:</span>
-              <span className="value">{resort.skiableAcres.toLocaleString()}</span>
+              <span className="value">{resort.skiableAcres ? resort.skiableAcres.toLocaleString() : 'N/A'}</span>
             </div>
           </div>
         </div>
@@ -49,10 +49,18 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
               <span className="label">Chairlifts:</span>
               <span className="value">{resort.lifts.chairlifts}</span>
             </div>
-            {resort.lifts.gondolas && (
-              <div className="stat">
-                <span className="label">Gondolas:</span>
-                <span className="value">{resort.lifts.gondolas}</span>
+            <div className="stat">
+              <span className="label">Surface Lifts</span>
+              <span className="value">{resort.lifts.surfaceLifts}</span>
+            </div>
+            <div className="stat">
+              <span className="label">Gondolas:</span>
+              <span className="value">{resort.lifts.gondolas || 0}</span>
+            </div>
+            {resort.lifts.fixedGripOnly && (
+              <div className="stat fixed-grip-indicator">
+                <span className="label">Lift Type:</span>
+                <span className="value fixed-grip">Fixed-grip only</span>
               </div>
             )}
             <div className="stat">
@@ -70,7 +78,7 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
               <div className="difficulty-bar">
                 <div 
                   className="difficulty-fill beginner"
-                  style={{ width: `${(resort.trails.beginner / resort.trails.total) * 100}%` }}
+                  style={{ width: `${((resort.trails.beginner ?? 0) / (resort.trails.total ?? 1)) * 100}%` }}
                 ></div>
               </div>
               <span className="difficulty-count">{resort.trails.beginner}</span>
@@ -80,7 +88,7 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
               <div className="difficulty-bar">
                 <div 
                   className="difficulty-fill intermediate"
-                  style={{ width: `${(resort.trails.intermediate / resort.trails.total) * 100}%` }}
+                  style={{ width: `${((resort.trails.intermediate ?? 0) / (resort.trails.total ?? 1)) * 100}%` }}
                 ></div>
               </div>
               <span className="difficulty-count">{resort.trails.intermediate}</span>
@@ -90,7 +98,7 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
               <div className="difficulty-bar">
                 <div 
                   className="difficulty-fill advanced"
-                  style={{ width: `${(resort.trails.advanced / resort.trails.total) * 100}%` }}
+                  style={{ width: `${((resort.trails.advanced ?? 0) / (resort.trails.total ?? 1)) * 100}%` }}
                 ></div>
               </div>
               <span className="difficulty-count">{resort.trails.advanced}</span>
@@ -100,7 +108,7 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
               <div className="difficulty-bar">
                 <div 
                   className="difficulty-fill expert"
-                  style={{ width: `${(resort.trails.expert / resort.trails.total) * 100}%` }}
+                  style={{ width: `${((resort.trails.expert ?? 0) / (resort.trails.total ?? 1)) * 100}%` }}
                 ></div>
               </div>
               <span className="difficulty-count">{resort.trails.expert}</span>
@@ -109,36 +117,40 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
         </div>
 
         <div className="additional-info">
-          <div className="stat">
-            <span className="label">Snowmaking:</span>
-            <span className="value">{resort.snowmaking.percentage}% of trails</span>
-          </div>
           {resort.liftTicketPrice && (
             <div className="stat">
-              <span className="label">Adult Lift Ticket:</span>
-              <span className="value">{formatPrice(resort.liftTicketPrice.adult)}</span>
+              <span className="label">Lift Ticket:</span>
+              <span className="value">{formatPrice(resort.liftTicketPrice)}</span>
+            </div>
+          )}
+          
+          {resort.website && (
+            <div className="stat">
+              <span className="label">Website:</span>
+              <span className="value">
+                <a href={resort.website} target="_blank" rel="noopener noreferrer">
+                  Visit Site
+                </a>
+              </span>
+            </div>
+          )}
+          
+          {resort.phoneNumber && (
+            <div className="stat">
+              <span className="label">Phone:</span>
+              <span className="value">
+                <a href={`tel:${resort.phoneNumber}`}>{resort.phoneNumber}</a>
+              </span>
+            </div>
+          )}
+          
+          {resort.seasonDates && (
+            <div className="stat">
+              <span className="label">Season:</span>
+              <span className="value">{resort.seasonDates}</span>
             </div>
           )}
         </div>
-
-        {resort.description && (
-          <div className="description">
-            <p>{resort.description}</p>
-          </div>
-        )}
-      </div>
-
-      <div className="card-footer">
-        {resort.website && (
-          <a 
-            href={resort.website} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="website-link"
-          >
-            Visit Website
-          </a>
-        )}
       </div>
     </div>
   );

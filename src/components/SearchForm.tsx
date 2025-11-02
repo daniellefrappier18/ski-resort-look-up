@@ -14,7 +14,7 @@ const SearchForm: React.FC<SearchFormProps> = ({
   filters,
   onFiltersChange
 }) => {
-  const handleFilterChange = (key: keyof SearchFilters, value: string | number | undefined) => {
+  const handleFilterChange = (key: keyof SearchFilters, value: string | number | boolean | undefined) => {
     onFiltersChange({
       ...filters,
       [key]: value === '' ? undefined : value
@@ -126,6 +126,18 @@ const SearchForm: React.FC<SearchFormProps> = ({
             value={filters.minSkiableAcres || ''}
             onChange={(e) => handleFilterChange('minSkiableAcres', e.target.value ? parseInt(e.target.value) : undefined)}
           />
+        </div>
+
+        <div className="filter-group checkbox-group">
+          <label htmlFor="fixedGripOnly" className="checkbox-label">
+            <input
+              id="fixedGripOnly"
+              type="checkbox"
+              checked={filters.fixedGripOnly || false}
+              onChange={(e) => handleFilterChange('fixedGripOnly', e.target.checked ? true : undefined)}
+            />
+            <span className="checkbox-text">Fixed-grip lifts only (no detachable chairs, gondolas, or trams)</span>
+          </label>
         </div>
       </div>
 

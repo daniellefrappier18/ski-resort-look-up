@@ -1,59 +1,104 @@
-# Ski Resort Web Scraper
+# USA Ski Resort Scraper# USA Ski Resort Scraper
 
-This directory contains a comprehensive web scraping solution for building a ski resort dataset from skiresort.info.
 
-## 🎿 Overview
 
-Since free ski resort APIs with comprehensive data are not readily available, this scraper extracts detailed information from skiresort.info, which contains data for over 6,000 ski resorts worldwide.
+This directory contains the web scraper used to build the comprehensive USA ski resort dataset for the React application.This directory contains the web scraper used to build the comprehensive USA ski resort dataset for the React application.
 
-## 📁 Files
 
-### Core Scripts
 
-- **`enhanced_scraper.py`** - Main scraper with detailed data extraction
-- **`dataset_builder.py`** - Builds comprehensive datasets from multiple sources
-- **`integrate_data.py`** - Converts scraped data to React application format
-- **`test_scraper.py`** - Simple test script for validating single resorts
+## 🎿 Overview## 🎿 Overview
 
-### Data Files
 
-- **`enhanced_ski_resorts.json`** - Sample scraped data (3 resorts)
-- **`requirements.txt`** - Python dependencies
 
-### Generated Files
+This scraper extracts detailed information from skiresort.info for all USA ski resorts, providing elevation, lifts, trails, pricing, and website data with accurate fixed-grip lift classifications.This scraper extracts detailed information from skiresort.info for all USA ski resorts, providing elevation, lifts, trails, pricing, and website data with accurate fixed-grip lift classifications.
 
-- **`../src/data/scraped-ski-resorts.ts`** - TypeScript data for React app
-- **`comprehensive_ski_resorts.json`** - Full dataset (when built)
 
-## 🚀 Quick Start
 
-### 1. Install Dependencies
+## 📁 Files## 📁 Files
 
-```bash
+
+
+### Current Files### Current Files
+
+
+
+- **`enhanced_usa_scraper.py`** - Main scraper with corrected discovery logic and comprehensive data extraction- **`enhanced_usa_scraper.py`** - Main scraper with corrected discovery logic and comprehensive data extraction
+
+- **`json_to_typescript_enhanced.py`** - Converts JSON data to TypeScript format for React app- **`json_to_typescript_enhanced.py`** - Converts JSON data to TypeScript format for React app
+
+- **`requirements.txt`** - Python dependencies- **`requirements.txt`** - Python dependencies
+
+- **`enhanced_usa_ski_resorts_complete_corrected.json`** - Final dataset (535 USA resorts)- **`enhanced_usa_ski_resorts_complete_corrected.json`** - Final dataset (535 USA resorts)
+
+
+
+## ✅ Completed Dataset## ✅ Completed Dataset
+
+
+
+The scraper has successfully processed **535 USA ski resorts** with:## 🚀 Usage
+
+- **100% elevation data** (base, summit, vertical drop)
+
+- **94.6% lifts data** (total lifts with accurate fixed-grip classifications)### Re-run Scraper (Optional)
+
+- **100% official websites**
+
+- **365 fixed-grip only resorts** correctly identifiedIf you need to update the dataset:
+
+
+
+## 🚀 Usage```bash
+
 pip3 install -r requirements.txt
+
+### Re-run Scraper (Optional)python3 enhanced_usa_scraper.py
+
 ```
 
-### 2. Run Sample Scraper
+If you need to update the dataset:
+
+### Convert to TypeScript
 
 ```bash
-python3 enhanced_scraper.py
-```
 
-This will scrape 5 famous ski resorts and create `enhanced_ski_resorts.json`.
+pip3 install -r requirements.txt```bash
 
-### 3. Integrate with React App
+python3 enhanced_usa_scraper.pypython3 json_to_typescript_enhanced.py
 
-```bash
+``````
+
+
+
+### Convert to TypeScript## 🎯 Data Quality
+
+
+
+```bash- **535 total resorts** discovered using corrected main-page-only logic
+
+python3 json_to_typescript_enhanced.py- **Accurate classifications** with improved fixed-grip detection  
+
+```- **Complete data extraction** from 4 pages per resort (main, lifts, slopes, contact)
+
 python3 integrate_data.py
-```
 
-This converts the scraped data to the React application format.
+## 🎯 Data Quality```
 
-### 4. Build Comprehensive Dataset (Optional)
 
-```bash
+
+- **535 total resorts** discovered using corrected main-page-only logicThis converts the scraped data to the React application format.
+
+- **Accurate classifications** with improved fixed-grip detection  
+
+- **Complete data extraction** from 4 pages per resort (main, lifts, slopes, contact)### 4. Build Comprehensive Dataset (Optional)
+
+
+
+---```bash
+
 python3 dataset_builder.py
-```
+
+*Dataset is complete and integrated into the React application.*```
 
 This will build a larger dataset by discovering resorts from country pages.
 
