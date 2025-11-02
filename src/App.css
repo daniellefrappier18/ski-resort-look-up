@@ -335,4 +335,35 @@ body {
   .difficulty-item {
     flex-wrap: wrap;
   }
+  
+  .credits-footer {
+    margin-top: 2rem;
+  }
+}
+
+/* Credits Footer */
+.credits-footer {
+  margin-top: 4rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.credits-content p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.credits-content a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.credits-content a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
 }

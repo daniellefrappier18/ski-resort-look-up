@@ -100,6 +100,40 @@ const SkiResortSearch: React.FC = () => {
           )}
         </>
       )}
+      
+      {/* Credits Footer */}
+      <footer className="credits-footer">
+        <div className="credits-content">
+          <p>
+            Data sourced from{' '}
+            <a 
+              href="https://www.skiresort.info/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              skiresort.info
+            </a>
+          </p>
+          <p>
+            Photo by{' '}
+            <a 
+              href="https://unsplash.com/@biron?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Chris Biron
+            </a>
+            {' '}on{' '}
+            <a 
+              href="https://unsplash.com/photos/snowy-mountain-JVtcrWcbj1c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Unsplash
+            </a>
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };

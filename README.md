@@ -96,10 +96,17 @@ ski-resort-look-up/
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
+## Credits & Acknowledgments
 
+### Data Source
+- **Ski resort data** sourced from [skiresort.info](https://www.skiresort.info/) with enhanced processing for accuracy
+- All elevation, lift, trail, and resort information extracted from their comprehensive database
+
+### Photo Attribution  
+- Background image by [Chris Biron](https://unsplash.com/@biron?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/snowy-mountain-JVtcrWcbj1c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+### Special Thanks
 - Built for snowboarding and skiing enthusiasts across the United States
-- Data sourced from skiresort.info with enhanced processing for accuracy
 - Inspired by the need for comprehensive resort comparison tools with detailed filtering options
 - Special thanks to the skiing community and resort operators who maintain detailed slope information
 
