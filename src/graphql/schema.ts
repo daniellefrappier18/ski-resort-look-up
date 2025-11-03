@@ -1,6 +1,5 @@
 import { gql } from '@apollo/client';
 
-// GraphQL Type Definitions for local schema
 export const typeDefs = gql`
   type Location {
     state: String!

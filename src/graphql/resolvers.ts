@@ -11,10 +11,8 @@ interface ResortFilters {
   fixedGripOnly?: boolean;
 }
 
-// GraphQL resolvers for local data
 export const resolvers = {
   Query: {
-    // Get all resorts with optional filtering and search
     skiResorts: (_: unknown, { filters, search }: { filters?: ResortFilters; search?: string }): SkiResort[] => {
       let results = usaSkiResorts;
 

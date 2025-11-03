@@ -1,6 +1,5 @@
 import { gql } from '@apollo/client';
 
-// Query to get all ski resorts with optional filtering
 export const GET_SKI_RESORTS = gql`
   query GetSkiResorts($filters: ResortFilters, $search: String) {
     skiResorts(filters: $filters, search: $search) {
@@ -39,7 +38,6 @@ export const GET_SKI_RESORTS = gql`
   }
 `;
 
-// Query to get a specific ski resort by ID
 export const GET_SKI_RESORT_BY_ID = gql`
   query GetSkiResortById($id: ID!) {
     skiResort(id: $id) {
