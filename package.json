@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:gh-pages": "NODE_ENV=production npm run build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve": "cd dist && npx http-server . -p 8080 -o"
   },
   "dependencies": {
     "@apollo/client": "^3.14.0",
