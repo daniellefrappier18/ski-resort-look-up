@@ -1,6 +1,6 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import type { SearchFilters } from '../types/ski-resort';
-import { useSkiResortsFromAPI } from '../hooks/useSkiResortsAPI';
+import { useSkiResortsGraphQL } from '../hooks/useSkiResortsGraphQL';
 import SkiResortCard from './SkiResortCard';
 import SearchForm from './SearchForm';
 
@@ -8,50 +8,26 @@ const SkiResortSearch: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filters, setFilters] = useState<SearchFilters>({});
   
-  // Fetch resorts from API
-  const { resorts: apiResorts, loading, error } = useSkiResortsFromAPI();
+  // Convert SearchFilters to GraphQL ResortFilters format
+  const graphqlFilters = {
+    state: filters.state,
+    minElevation: filters.minElevation,
+    maxElevation: filters.maxElevation,
+    minLifts: filters.minLifts,
+    minTrails: filters.minTrails,
+    fixedGripOnly: filters.fixedGripOnly
+  };
 
-  // Filter and search resorts based on current criteria
-  const filteredResorts = useMemo(() => {
-    return apiResorts.filter(resort => {
-      // Text search
-      const matchesSearch = !searchTerm || 
-        resort.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        resort.location.city?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        resort.location.state.toLowerCase().includes(searchTerm.toLowerCase());
-
-      // Filter by state
-      const matchesState = !filters.state || 
-        resort.location.state.toLowerCase() === filters.state.toLowerCase();
-
-      // Filter by elevation
-      const matchesMinElevation = !filters.minElevation || 
-        (resort.elevation.summit !== null && resort.elevation.summit >= filters.minElevation);
-
-      const matchesMaxElevation = !filters.maxElevation || 
-        (resort.elevation.summit !== null && resort.elevation.summit <= filters.maxElevation);
-
-      // Filter by lifts
-      const matchesMinLifts = !filters.minLifts || 
-        (resort.lifts.total !== null && resort.lifts.total >= filters.minLifts);
-
-      // Filter by trails
-      const matchesMinTrails = !filters.minTrails || 
-        (resort.trails.total !== null && resort.trails.total >= filters.minTrails);
-
-      // Filter by skiable acres
-      const matchesMinAcres = !filters.minSkiableAcres || 
-        (resort.skiableAcres !== null && resort.skiableAcres >= filters.minSkiableAcres);
-
-      // Filter by fixed-grip only
-      const matchesFixedGripOnly = !filters.fixedGripOnly || 
-        resort.lifts.fixedGripOnly === true;
-
-      return matchesSearch && matchesState && matchesMinElevation && 
-             matchesMaxElevation && matchesMinLifts && matchesMinTrails && 
-             matchesMinAcres && matchesFixedGripOnly;
-    });
-  }, [searchTerm, filters, apiResorts]);
+  // Fetch resorts from GraphQL
+  const { 
+    resorts: filteredResorts, 
+    loading, 
+    error, 
+    states 
+  } = useSkiResortsGraphQL(
+    graphqlFilters, 
+    searchTerm || undefined
+  );
 
   return (
     <div className="ski-resort-search">
@@ -65,6 +41,7 @@ const SkiResortSearch: React.FC = () => {
         onSearchTermChange={setSearchTerm}
         filters={filters}
         onFiltersChange={setFilters}
+        states={states}
       />
 
       {error && (
