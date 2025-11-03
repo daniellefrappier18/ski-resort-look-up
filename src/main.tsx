@@ -5,10 +5,12 @@ import './index.css'
 import App from './App.tsx'
 import { GraphQLProvider } from './graphql'
 
+const basename = import.meta.env.PROD ? '/ski-resort-look-up' : '';
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <GraphQLProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <App />
       </BrowserRouter>
     </GraphQLProvider>

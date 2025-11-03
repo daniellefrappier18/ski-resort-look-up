@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <Routes>
+        <Route index element={<SkiResortSearch />} />
         <Route path="/" element={<SkiResortSearch />} />
+        <Route path="*" element={<SkiResortSearch />} />
       </Routes>
     </div>
   )
