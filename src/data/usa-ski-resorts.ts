@@ -1,7 +1,3 @@
-// Generated USA ski resort data - COMPLETE DATASET with corrected elevation/lifts data
-// This file is auto-generated from enhanced_usa_ski_resorts_complete_corrected.json
-// Total resorts: 535
-
 import type { SkiResort } from '../types/ski-resort';
 
 export const usaSkiResorts: SkiResort[] = [
