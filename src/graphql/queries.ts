@@ -9,7 +9,6 @@ export const GET_SKI_RESORTS = gql`
       location {
         state
         city
-        region
       }
       elevation {
         base
@@ -18,6 +17,10 @@ export const GET_SKI_RESORTS = gql`
       }
       lifts {
         total
+        chairlifts
+        surfaceLifts
+        gondolas
+        funiculars
         fixedGripOnly
       }
       trails {
@@ -27,8 +30,11 @@ export const GET_SKI_RESORTS = gql`
         advanced
         expert
       }
+      skiableAcres
+      liftTicketPrice
+      seasonDates
       website
-      phone
+      phoneNumber
     }
   }
 `;
@@ -42,7 +48,6 @@ export const GET_SKI_RESORT_BY_ID = gql`
       location {
         state
         city
-        region
       }
       elevation {
         base
@@ -51,6 +56,10 @@ export const GET_SKI_RESORT_BY_ID = gql`
       }
       lifts {
         total
+        chairlifts
+        surfaceLifts
+        gondolas
+        funiculars
         fixedGripOnly
       }
       trails {
@@ -60,8 +69,11 @@ export const GET_SKI_RESORT_BY_ID = gql`
         advanced
         expert
       }
+      skiableAcres
+      liftTicketPrice
+      seasonDates
       website
-      phone
+      phoneNumber
     }
   }
 `;

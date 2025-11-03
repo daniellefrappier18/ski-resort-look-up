@@ -33,7 +33,7 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
             </div>
             <div className="stat">
               <span className="label">Skiable Acres:</span>
-              <span className="value">{resort.skiableAcres ? resort.skiableAcres.toLocaleString() : 'N/A'}</span>
+              <span className="value">{resort.skiableAcres !== null && resort.skiableAcres !== undefined ? resort.skiableAcres.toLocaleString() : 'N/A'}</span>
             </div>
           </div>
         </div>
@@ -43,19 +43,19 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
           <div className="stats-grid">
             <div className="stat">
               <span className="label">Total Lifts:</span>
-              <span className="value">{resort.lifts.total}</span>
+              <span className="value">{resort.lifts.total ?? 'N/A'}</span>
             </div>
             <div className="stat">
               <span className="label">Chairlifts:</span>
-              <span className="value">{resort.lifts.chairlifts}</span>
+              <span className="value">{resort.lifts.chairlifts ?? 0}</span>
             </div>
             <div className="stat">
-              <span className="label">Surface Lifts</span>
-              <span className="value">{resort.lifts.surfaceLifts}</span>
+              <span className="label">Surface Lifts:</span>
+              <span className="value">{resort.lifts.surfaceLifts ?? 0}</span>
             </div>
             <div className="stat">
               <span className="label">Gondolas:</span>
-              <span className="value">{resort.lifts.gondolas || 0}</span>
+              <span className="value">{resort.lifts.gondolas ?? 0}</span>
             </div>
             {resort.lifts.fixedGripOnly && (
               <div className="stat fixed-grip-indicator">
@@ -115,6 +115,7 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
             </div>
           </div>
         </div>
+
 
         <div className="additional-info">
           {resort.liftTicketPrice && (
