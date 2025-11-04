@@ -1,4 +1,4 @@
-import { usaSkiResorts } from '../data/usa-ski-resorts';
+import { usaSkiResorts } from '../data/load-ski-resorts';
 import type { SkiResort } from '../types/ski-resort';
 
 interface ResortFilters {

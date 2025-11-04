@@ -54,8 +54,12 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
               <span className="value">{resort.lifts.surfaceLifts ?? 0}</span>
             </div>
             <div className="stat">
-              <span className="label">Gondolas:</span>
+              <span className="label">Gondolas/Trams:</span>
               <span className="value">{resort.lifts.gondolas ?? 0}</span>
+            </div>
+            <div className="stat">
+              <span className="label">Funiculars:</span>
+              <span className="value">{resort.lifts.funiculars ?? 0}</span>
             </div>
             {resort.lifts.fixedGripOnly && (
               <div className="stat fixed-grip-indicator">
