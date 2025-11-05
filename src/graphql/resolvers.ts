@@ -6,7 +6,7 @@ interface ResortFilters {
   minElevation?: number;
   maxElevation?: number;
   minLifts?: number;
-  minTrails?: number;
+  minSlopeKm?: number;
   minSkiableAcres?: number;
   fixedGripOnly?: boolean;
 }
@@ -46,8 +46,8 @@ export const resolvers = {
             return false;
           }
 
-          // Filter by trails
-          if (filters.minTrails && (!resort.trails.total || resort.trails.total < filters.minTrails)) {
+          // Filter by total slope kilometers
+          if (filters.minSlopeKm && (!resort.trails.totalKm || resort.trails.totalKm < filters.minSlopeKm)) {
             return false;
           }
 

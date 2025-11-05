@@ -14,7 +14,7 @@ const SkiResortSearch: React.FC = () => {
     minElevation: filters.minElevation,
     maxElevation: filters.maxElevation,
     minLifts: filters.minLifts,
-    minTrails: filters.minTrails,
+    minSlopeKm: filters.minSlopeKm,
     fixedGripOnly: filters.fixedGripOnly
   };
 
@@ -32,8 +32,8 @@ const SkiResortSearch: React.FC = () => {
   return (
     <div className="ski-resort-search">
       <div className="search-header">
-        <h1>New England Ski Resort Explorer</h1>
-        <p>Discover mountain elevations, lift statistics, and more for ski areas across New England</p>
+        <h1>USA Ski Resort Explorer 🏂</h1>
+        <h2>☠️ Find safe ski resorts nationwide & avoid fixed-grip death traps! ☠️</h2>
       </div>
 
       <SearchForm

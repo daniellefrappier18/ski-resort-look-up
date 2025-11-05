@@ -23,17 +23,19 @@ export const GET_SKI_RESORTS = gql`
         fixedGripOnly
       }
       trails {
-        total
-        beginner
-        intermediate
-        advanced
-        expert
+        totalKm
+        beginnerKm
+        intermediateKm
+        advancedKm
+        expertKm
       }
       skiableAcres
-      liftTicketPrice
-      seasonDates
       website
-      phoneNumber
+      url
+      trail_map_url
+      adult_pass_price
+      child_pass_price
+  
     }
   }
 `;
@@ -61,16 +63,18 @@ export const GET_SKI_RESORT_BY_ID = gql`
         fixedGripOnly
       }
       trails {
-        total
-        beginner
-        intermediate
-        advanced
-        expert
+        totalKm
+        beginnerKm
+        intermediateKm
+        advancedKm
+        expertKm
       }
       skiableAcres
       liftTicketPrice
       seasonDates
       website
+      url
+      trail_map_url
       phoneNumber
     }
   }

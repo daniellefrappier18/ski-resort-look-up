@@ -28,11 +28,10 @@ export const typeDefs = gql`
   }
 
   type Trails {
-    total: Int!
-    beginner: Int!
-    intermediate: Int!
-    advanced: Int!
-    expert: Int!
+    totalKm: Float
+    beginnerKm: Float
+    intermediateKm: Float
+    advancedKm: Float
   }
 
   type SkiResort {
@@ -45,8 +44,10 @@ export const typeDefs = gql`
     skiableAcres: Float
     seasonDates: String
     website: String
-    phoneNumber: String
-    liftTicketPrice: Int
+    url: String
+    trail_map_url: String
+    adult_pass_price: Float
+    child_pass_price: Float
   }
 
   input ResortFilters {
@@ -54,7 +55,7 @@ export const typeDefs = gql`
     minElevation: Int
     maxElevation: Int
     minLifts: Int
-    minTrails: Int
+    minSlopeKm: Float
     minSkiableAcres: Int
     fixedGripOnly: Boolean
   }

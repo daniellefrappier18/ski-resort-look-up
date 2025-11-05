@@ -8,8 +8,8 @@ export interface ResortFilters {
   maxElevation?: number;
   minLifts?: number;
   maxLifts?: number;
-  minTrails?: number;
-  maxTrails?: number;
+  minSlopeKm?: number;
+  maxSlopeKm?: number;
   fixedGripOnly?: boolean;
 }
 

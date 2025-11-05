@@ -35,9 +35,16 @@ body {
   font-size: 2.5rem;
 }
 
+.search-header h2 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
 .search-header p {
   color: #fff;
   font-size: 1.1rem;
+  margin-bottom: 0.3rem;
 }
 
 /* Search Form */
@@ -66,6 +73,11 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
+}
+
+.danger-zone {
+  display: flex;
+  margin-bottom: 1rem;
 }
 
 .filters-grid {
@@ -130,18 +142,62 @@ body {
   color: #555;
 }
 
-/* Fixed-grip indicator */
+/* Fixed-grip indicator - DANGER ZONE! */
 .fixed-grip-indicator {
   grid-column: span 2;
 }
 
+.danger-warning {
+  background: linear-gradient(45deg, #ff4444, #cc0000);
+  border: 2px solid #990000;
+  border-radius: 8px;
+  padding: 0.5rem;
+  animation: danger-pulse 2s infinite;
+}
+
+.danger-warning .label {
+  color: #fff !important;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
 .fixed-grip {
-  background: #e8f4ff;
-  color: #2c5aa0;
-  padding: 0.2rem 0.5rem;
+  background: linear-gradient(45deg, #ff6b6b, #ff4757);
+  color: #fff;
+  padding: 0.3rem 0.6rem;
   border-radius: 12px;
-  font-size: 0.8rem;
-  font-weight: 500;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+  border: 1px solid #cc0000;
+}
+
+/* Danger filter in search form */
+.danger-filter {
+  background: linear-gradient(45deg, #ffebee, #ffcdd2);
+  border: 2px solid #f44336;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+.danger-filter .checkbox-text {
+  color: #c62828;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.danger-filter small {
+  color: #d32f2f;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Pulsing animation for danger warnings */
+@keyframes danger-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 68, 68, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 68, 68, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 68, 68, 0); }
 }
 
 /* Results */
@@ -187,12 +243,94 @@ body {
   font-style: italic;
 }
 
+.card-content {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.card-main-content {
+  flex: 1;
+}
+
 .card-content h4 {
   color: #333;
   margin: 1rem 0 0.5rem 0;
   font-size: 1rem;
   border-bottom: 1px solid #eee;
   padding-bottom: 0.25rem;
+}
+
+/* Trail Map Thumbnail */
+.card-thumbnail {
+  width: 200px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.trail-map-thumbnail {
+  width: 100%;
+  height: 150px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background: #f5f5f5;
+}
+
+.trail-map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.trail-map-image:hover {
+  transform: scale(1.05);
+}
+
+.trail-map-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  color: #6c757d;
+}
+
+.placeholder-content {
+  text-align: center;
+}
+
+.placeholder-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.placeholder-text {
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+
+.view-full-map {
+  color: #2c5aa0;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.25rem;
+  border: 1px solid #2c5aa0;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.view-full-map:hover {
+  background: #2c5aa0;
+  color: white;
 }
 
 .stats-grid {
@@ -366,4 +504,26 @@ body {
 .credits-content a:hover {
   color: #1d4ed8;
   text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .card-thumbnail {
+    width: 100%;
+    max-width: 300px;
+    align-self: center;
+  }
+  
+  .trail-map-thumbnail {
+    height: 120px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
 }

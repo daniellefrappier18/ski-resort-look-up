@@ -1,5 +1,5 @@
 import type { SkiResort } from '../types/ski-resort';
-import rawData from './enhanced-usa-ski-resorts.json';
+import rawData from './usa-ski-resorts.json';
 
 // Type for the raw JSON data structure
 interface LiftDetail {
@@ -17,16 +17,14 @@ interface RawSkiResort {
   elevation_top: number | null;
   elevation_difference: number | null;
   slopes_total_km: number | null;
+  slopes_easy_km: number | null;
+  slopes_intermediate_km: number | null;
+  slopes_difficult_km: number | null;
   lifts_total: number | null;
-  day_pass_adult: number | null;
+  adult_pass_price: number | null;
+  child_pass_price: number | null;
   website: string | null;
-  season_opening: string | null;
-  season_closing: string | null;
-  trails_beginner: number | null;
-  trails_intermediate: number | null;
-  trails_advanced: number | null;
-  trails_expert: number | null;
-  trails_total: number | null;
+  trail_map_url: string | null;
   fixed_grip_only: boolean | null;
   lift_details?: LiftDetail[]; // Optional array of detailed lift information
 }
@@ -65,6 +63,7 @@ function transformResortData(rawResort: RawSkiResort): SkiResort {
     const funiculars = liftDetails.filter(lift => lift.type === 'funicular').length;
     const surfaceLifts = liftDetails.filter(lift => 
       lift.type === 'surface' || 
+      lift.type === 'surface_lift' ||
       lift.type === 'rope tow' || 
       lift.type === 'magic carpet' ||
       lift.type === 'platter lift' ||
@@ -101,21 +100,19 @@ function transformResortData(rawResort: RawSkiResort): SkiResort {
     },
     lifts: parseLiftDetails(rawResort.lift_details),
     trails: {
-      total: rawResort.trails_total ?? 0, // Default to 0 if null
-      beginner: rawResort.trails_beginner ?? 0,
-      intermediate: rawResort.trails_intermediate ?? 0,
-      advanced: rawResort.trails_advanced ?? 0,
-      expert: rawResort.trails_expert ?? 0
+      totalKm: rawResort.slopes_total_km,
+      beginnerKm: rawResort.slopes_easy_km,
+      intermediateKm: rawResort.slopes_intermediate_km,
+      advancedKm: rawResort.slopes_difficult_km
     },
     skiableAcres: kmToAcres(rawResort.slopes_total_km),
-    seasonDates: rawResort.season_opening && rawResort.season_closing 
-      ? `${rawResort.season_opening} - ${rawResort.season_closing}` 
-      : 'Season dates not available',
     website: rawResort.website || '',
-    phoneNumber: null,
-    liftTicketPrice: rawResort.day_pass_adult ?? 0 // Default to 0 if null
+    url: rawResort.url,
+    trail_map_url: rawResort.trail_map_url,
+    adult_pass_price: rawResort.adult_pass_price,
+    child_pass_price: rawResort.child_pass_price 
   };
 }
 
 // Export the transformed data
-export const usaSkiResorts: SkiResort[] = (rawData as RawSkiResort[]).map(transformResortData);
+export const usaSkiResorts: SkiResort[] = (rawData as unknown as RawSkiResort[]).map(transformResortData);

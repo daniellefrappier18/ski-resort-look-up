@@ -87,13 +87,14 @@ const SearchForm: React.FC<SearchFormProps> = ({
         </div>
 
         <div className="filter-group">
-          <label htmlFor="minTrails">Min Number of Trails:</label>
+          <label htmlFor="minSlopeKm">Min Slope Kilometers:</label>
           <input
-            id="minTrails"
+            id="minSlopeKm"
             type="number"
-            placeholder="e.g. 50"
-            value={filters.minTrails || ''}
-            onChange={(e) => handleFilterChange('minTrails', e.target.value ? parseInt(e.target.value) : undefined)}
+            step="0.1"
+            placeholder="e.g. 10.5"
+            value={filters.minSlopeKm || ''}
+            onChange={(e) => handleFilterChange('minSlopeKm', e.target.value ? parseFloat(e.target.value) : undefined)}
           />
         </div>
 
@@ -107,16 +108,21 @@ const SearchForm: React.FC<SearchFormProps> = ({
             onChange={(e) => handleFilterChange('minSkiableAcres', e.target.value ? parseInt(e.target.value) : undefined)}
           />
         </div>
-
+      </div>
+      <div className="danger-zone">
         <div className="filter-group checkbox-group">
-          <label htmlFor="fixedGripOnly" className="checkbox-label">
+          <label htmlFor="fixedGripOnly" className="checkbox-label danger-filter">
             <input
               id="fixedGripOnly"
               type="checkbox"
               checked={filters.fixedGripOnly || false}
               onChange={(e) => handleFilterChange('fixedGripOnly', e.target.checked ? true : undefined)}
             />
-            <span className="checkbox-text">Fixed-grip lifts only (no detachable chairs, gondolas, or trams)</span>
+            <span className="checkbox-text">
+              ☠️ DANGER ZONE: Fixed-grip lifts only ☠️ 
+              <br />
+              <small>(No detachable chairs, gondolas, or trams - Hard to get off!)</small>
+            </span>
           </label>
         </div>
       </div>

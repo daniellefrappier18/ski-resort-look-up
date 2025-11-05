@@ -25,17 +25,17 @@ export interface SkiResort {
     fixedGripOnly: boolean | null;
   };
   trails: {
-    total: number | null;
-    beginner: number | null;
-    intermediate: number | null;
-    advanced: number | null;
-    expert: number | null;
+    totalKm: number | null;
+    beginnerKm: number | null;
+    intermediateKm: number | null;
+    advancedKm: number | null;
   };
   skiableAcres: number | null;
-  seasonDates: string | null;
   website: string | null;
-  phoneNumber: string | null;
-  liftTicketPrice: number | null;
+  url: string | null;
+  trail_map_url: string | null;
+  adult_pass_price?: number | null;
+  child_pass_price?: number | null;
 }
 
 export interface SearchFilters {
@@ -43,7 +43,7 @@ export interface SearchFilters {
   minElevation?: number;
   maxElevation?: number;
   minLifts?: number;
-  minTrails?: number;
+  minSlopeKm?: number; // Filter by minimum total slope kilometers
   minSkiableAcres?: number;
   fixedGripOnly?: boolean; // Filter for resorts with only fixed-grip chairlifts
 }

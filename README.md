@@ -1,17 +1,28 @@
 # Ski Resort Explorer 🎿
 
-A comprehensive React application for exploring USA ski resorts, featuring detailed mountain statistics, accurate trail difficulty data, and advanced filtering capabilities.
+## The Problem This Solves ☠️
+
+**Ever been stuck on a fixed-grip chairlift that you can't get off?** This project was born from a personal need - having difficulty getting off fixed-grip chairlifts and finding **no easy way to filter them out** on existing sites like skiresort.info.
+
+**This is THE definitive resource for finding ski resorts that WON'T leave you stranded on a sketchy old lift!**
+
+## Why This Exists 🚡
+
+- **Personal Accessibility**: Some snowboard and skiers have difficulty with fixed-grip lifts (balance, timing, physical limitations)
+- **Safety First**: Avoid resorts with only old, hard-to-dismount lifts
+- **No Other Solution**: Major ski sites don't offer this crucial filter
+- **Real Data**: Scraped from actual resort pages, not guesswork
 
 ## Features
 
-- 🏔️ **Mountain Stats**: View summit elevation, base elevation, vertical drop, and skiable acres for each resort
-- 🚡 **Rich Lift Analysis**: Detailed breakdown of chairlifts, gondolas, trams, funiculars, and surface lifts with accurate counts
-- ⛷️ **Accurate Trail Breakdown**: Visual representation of trail difficulty distribution with data sourced from resort slope-offering pages
-- 🔍 **Advanced Search & Filtering**: Filter by state, elevation, number of lifts, trails, skiable acres, and lift type (fixed-grip only)
-- 📊 **Enhanced Data Accuracy**: Trail difficulties extracted from official resort pages instead of estimated
-- 🎿 **Fixed-Grip Filter**: Identify smaller, family-friendly resorts with only fixed-grip chairlifts (no detachable lifts)
-- 📱 **Responsive Design**: Works great on desktop and mobile devices
-- 🇺🇸 **Comprehensive USA Coverage**: Extensive database of USA ski resorts with detailed lift and trail information
+- ☠️ **DANGER ZONE Filter**: Instantly identify and avoid fixed-grip-only death traps with dramatic skull warnings
+- 🏔️ **Mountain Stats**: Summit elevation, base elevation, vertical drop, and skiable acres
+- 🚡 **Smart Lift Analysis**: Detachable chairs, gondolas, trams vs. sketchy fixed-grip lifts
+- ⛷️ **Slope Data**: Actual slope distances in kilometers (not unreliable trail counts)
+- 🔍 **Advanced Filtering**: Filter by state, elevation, lift type, slope distance
+- 📊 **Real Data**: Scraped directly from skiresort.info for accuracy
+- 📱 **Mobile Friendly**: Plan your safe ski trips anywhere
+- 🇺🇸 **Complete USA Coverage**: 551 resorts and counting
 
 ## Getting Started
 
@@ -39,11 +50,22 @@ npm run dev
 
 4. Open [http://localhost:5173](http://localhost:5173) in your browser
 
-### GraphQL Features
+## Data Scraping & Processing 🔧
+
+This project includes a comprehensive Python scraper that extracts data from skiresort.info:
+
+- **State-by-State Processing**: Scrapes all USA ski resorts by processing each state individually
+- **Intelligent Lift Detection**: Advanced parsing of lift types including surface lifts, rope tows, t-bars
+- **Slope Distance Extraction**: Gets actual slope kilometers (not unreliable trail counts)
+- **Pricing Information**: Adult and child lift ticket prices where available
+- **Duplicate Removal**: Automatically deduplicates lift entries for clean data
+- **Conservative Processing**: Handles missing data gracefully for maximum reliability
+
+### GraphQL Architecture
 - **Local Schema**: No external API dependencies - GraphQL runs entirely client-side
 - **Type Safety**: Full TypeScript integration with compile-time validation
 - **Flexible Queries**: Request exactly the data you need for optimal performance  
-- **Advanced Filtering**: Complex resort filtering by elevation, lift count, trail difficulty, etc.
+- **Advanced Filtering**: Complex resort filtering by elevation, lift count, slope distance, etc.
 - **Caching**: Intelligent caching with Apollo Client for fast subsequent queries
 
 ## Available Scripts
@@ -75,5 +97,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-Happy riding and skiing! 🎿⛷️
+Happy riding and skiing! 🏂 ⛷️
 ```
