@@ -31,9 +31,9 @@ const SkiResortSearch: React.FC = () => {
 
   return (
     <div className="ski-resort-search">
-      <div className="search-header">
-        <h1>USA Ski Resort Explorer 🏂</h1>
-        <h2>☠️ Find safe ski resorts nationwide & avoid fixed-grip death traps! ☠️</h2>
+      <div className="text-center mb-8">
+        <h1 className="text-white mb-2 text-4xl">USA Ski Resort Explorer 🏂</h1>
+        <h2 className="text-white mb-2 text-xl">☠️ Find safe ski resorts nationwide & avoid fixed-grip death traps! ☠️</h2>
       </div>
 
       <SearchForm
@@ -46,7 +46,7 @@ const SkiResortSearch: React.FC = () => {
 
       {error && (
         <div className="api-error">
-          <p style={{ color: '#d9534f', padding: '1rem', background: '#f9f2f4', borderRadius: '4px' }}>
+          <p className="text-red-700 p-4 bg-red-100 rounded">
             ⚠️ {error}
           </p>
         </div>
@@ -54,49 +54,51 @@ const SkiResortSearch: React.FC = () => {
 
       {loading ? (
         <div className="loading">
-          <p style={{ textAlign: 'center', padding: '2rem', fontSize: '1.1rem' }}>
+          <p className="text-center py-8 text-lg">
             🎿 Loading ski resort data...
           </p>
         </div>
       ) : (
         <>
-          <div className="results-summary">
+          <div className="mb-4 font-semibold p-2 text-white" style={{backgroundColor: 'rgba(4, 59, 92, 0.4)'}}>
             <p>Found {filteredResorts.length} ski resort{filteredResorts.length !== 1 ? 's' : ''}</p>
           </div>
 
-          <div className="resort-grid">
+          <div className="grid gap-6 mb-8" style={{gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))'}}>
             {filteredResorts.map(resort => (
               <SkiResortCard key={resort.id} resort={resort} />
             ))}
           </div>
 
           {filteredResorts.length === 0 && !loading && (
-            <div className="no-results">
-              <p>No ski resorts match your search criteria. Try adjusting your filters.</p>
+            <div className="text-center py-12 text-gray-600">
+              <p className="text-lg">No ski resorts match your search criteria. Try adjusting your filters.</p>
             </div>
           )}
         </>
       )}
       
       {/* Credits Footer */}
-      <footer className="credits-footer">
+      <footer className="mt-16 p-6 rounded-lg border border-gray-300 text-center" style={{background: 'rgba(255, 255, 255, 0.9)'}}>
         <div className="credits-content">
-          <p>
+          <p className="my-2 text-sm text-gray-600">
             Data sourced from{' '}
             <a 
               href="https://www.skiresort.info/" 
               target="_blank" 
               rel="noopener noreferrer"
+              className="text-blue-600 no-underline font-medium hover:text-blue-800 hover:underline"
             >
               skiresort.info
             </a>
           </p>
-          <p>
+          <p className="my-2 text-sm text-gray-600">
             Photo by{' '}
             <a 
               href="https://unsplash.com/@biron?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-blue-600 no-underline font-medium hover:text-blue-800 hover:underline"
             >
               Chris Biron
             </a>
@@ -105,6 +107,7 @@ const SkiResortSearch: React.FC = () => {
               href="https://unsplash.com/photos/snowy-mountain-JVtcrWcbj1c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-blue-600 no-underline font-medium hover:text-blue-800 hover:underline"
             >
               Unsplash
             </a>

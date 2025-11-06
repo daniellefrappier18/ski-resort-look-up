@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className="App">
+    <div className="max-w-6xl mx-auto p-8">
       <Routes>
         <Route index element={<SkiResortSearch />} />
         <Route path="/" element={<SkiResortSearch />} />
