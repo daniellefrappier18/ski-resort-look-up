@@ -3633,169 +3633,6 @@
     "scraped_at": "2025-11-04T19:55:08.556227"
   },
   {
-    "name": "Wildkogel – Neukirchen/Bramberg",
-    "state": "California",
-    "url": "https://www.skiresort.info/ski-resort/wildkogel-neukirchenbramberg/",
-    "elevation_base": 820,
-    "elevation_top": 2150,
-    "elevation_difference": 1330,
-    "slopes_total_km": 75,
-    "slopes_easy_km": 35,
-    "slopes_intermediate_km": 30,
-    "slopes_difficult_km": 10,
-    "lifts_total": 20,
-    "day_pass_adult": null,
-    "website": "https://www.wildkogel-arena.at/",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "name": "Ganzer X-press (YOC 2017)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Smaragdbahn Wildkogel III (YOC 2010)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Smaragdbahn Wildkogel IV (YOC 2010)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Wildkogelbahn II (YOC 1991)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Wildkogelbahn I (YOC 1991)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Frühmesser X-press (YOC 2012)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Pfeifferköpfl (YOC 2004)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Gensbichlalmbahn (YOC 2005)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Ganzeralmbahn (YOC 1995)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Braunkogellift (YOC 1990)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Wennsergletscher I",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Preimislift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Wolkensteinlift (YOC 1998)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Ganzeralm (YOC 1988)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Dürnbach (YOC 2020)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Wildkogelscharte I (YOC 2013)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Wildkogelscharte II (YOC 2013)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Kaserboden (YOC 2013)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Eggerfeld",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Übungslift Wennsergletscher II",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      }
-    ],
-    "has_detachable": true,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 22,
-    "trails_beginner": 43,
-    "trails_intermediate": 38,
-    "trails_advanced": 12,
-    "trails_expert": 0,
-    "trails_total": 93,
-    "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/c5/57/7c/cf/d36e74ae04.jpg",
-    "scraped_at": "2025-11-04T19:55:15.315456"
-  },
-  {
     "name": "Snowmass",
     "state": "Colorado",
     "url": "https://www.skiresort.info/ski-resort/snowmass/",
@@ -6867,50 +6704,6 @@
     "scraped_at": "2025-11-04T19:56:36.108365"
   },
   {
-    "name": "Stagecoach Mountain",
-    "state": "Colorado",
-    "url": "https://www.skiresort.info/ski-resort/stagecoach-mountain/",
-    "elevation_base": 2290,
-    "elevation_top": 2867,
-    "elevation_difference": 577,
-    "slopes_total_km": 16,
-    "slopes_easy_km": null,
-    "slopes_intermediate_km": null,
-    "slopes_difficult_km": null,
-    "lifts_total": 16,
-    "day_pass_adult": null,
-    "website": "https://www.valamar.com/de/hotel-obertauern/kesselspitze-valamar-collection-hotel?utm_source=skiresort&utm_medium=listing&utm_campaign=hotels_ongoing&utm_content=kesselspitze_de_112022",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "name": "planned: Big Hitch (YOC 2025)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "planned: Yellow Jacket Express (YOC 2025)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      }
-    ],
-    "has_detachable": true,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T19:56:39.695156"
-  },
-  {
     "name": "Howelsen Hill – Steamboat Springs",
     "state": "Colorado",
     "url": "https://www.skiresort.info/ski-resort/howelsen-hill-steamboat-springs/",
@@ -7249,7 +7042,7 @@
     "slopes_difficult_km": 0,
     "lifts_total": 1,
     "day_pass_adult": null,
-    "website": "https://www.hotelcristallo.org/en/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "https://www.townoffrisco.com/things-to-do/frisco-adventure-park/",
     "adult_pass_price": 55,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -7274,84 +7067,6 @@
     "trails_total": 0,
     "trail_map_url": null,
     "scraped_at": "2025-11-04T19:57:04.810615"
-  },
-  {
-    "name": "Dry slopes Ski Maxx – Colorado Springs",
-    "state": "Colorado",
-    "url": "https://www.skiresort.info/ski-resort/ski-maxx-colorado-springs/",
-    "elevation_base": 1907,
-    "elevation_top": 1910,
-    "elevation_difference": 3,
-    "slopes_total_km": 0.1,
-    "slopes_easy_km": 0.1,
-    "slopes_intermediate_km": 0,
-    "slopes_difficult_km": 0,
-    "lifts_total": 1,
-    "day_pass_adult": null,
-    "website": "https://skimaxx.com/",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Ski Maxx",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "people_mover"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 2,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T19:57:08.018543"
-  },
-  {
-    "name": "Bowe's Ski Hill – Steamboat Springs",
-    "state": "Colorado",
-    "url": "https://www.skiresort.info/ski-resort/bowes-ski-hill-steamboat-springs/",
-    "elevation_base": 2105,
-    "elevation_top": 2135,
-    "elevation_difference": 30,
-    "slopes_total_km": 0.1,
-    "slopes_easy_km": 0,
-    "slopes_intermediate_km": 0.1,
-    "slopes_difficult_km": 0,
-    "lifts_total": 1,
-    "day_pass_adult": null,
-    "website": "https://www.hotel-riml.com/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Bowe's Ski Tow (YOC 1965)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 2,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T19:57:12.127248"
   },
   {
     "name": "Lee's Ski Hill – Ouray",
@@ -7393,44 +7108,6 @@
     "scraped_at": "2025-11-04T19:57:15.599589"
   },
   {
-    "name": "Cimarron Mountain Club",
-    "state": "Colorado",
-    "url": "https://www.skiresort.info/ski-resort/cimarron-mountain-club/",
-    "elevation_base": 2990,
-    "elevation_top": 3465,
-    "elevation_difference": 475,
-    "slopes_total_km": null,
-    "slopes_easy_km": null,
-    "slopes_intermediate_km": null,
-    "slopes_difficult_km": null,
-    "lifts_total": 16,
-    "day_pass_adult": null,
-    "website": "https://cimarroncolorado.com",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "type": "gondola",
-        "name": "Gondola (pattern detected)",
-        "detachable": false,
-        "fixed_grip": false
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T19:57:19.320167"
-  },
-  {
     "name": "Snöbahn – Centennial",
     "state": "Colorado",
     "url": "https://www.skiresort.info/ski-resort/snoebahn-centennial/",
@@ -7467,75 +7144,6 @@
     "trails_total": 0,
     "trail_map_url": null,
     "scraped_at": "2025-11-04T19:57:22.580335"
-  },
-  {
-    "name": "Dry slopes Infinity Slopes – Loveland",
-    "state": "Colorado",
-    "url": "https://www.skiresort.info/ski-resort/infinity-slopes-loveland/",
-    "elevation_base": 1513,
-    "elevation_top": 1517,
-    "elevation_difference": 4,
-    "slopes_total_km": 0.1,
-    "slopes_easy_km": 0.1,
-    "slopes_intermediate_km": 0,
-    "slopes_difficult_km": 0,
-    "lifts_total": 16,
-    "day_pass_adult": null,
-    "website": "https://www.infinityslopes.com/",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": "https://www.skiresort.info//adserver.skiresort-service.com/www/delivery/lg.php?bannerid=9056&campaignid=30&zoneid=72&loc=https%3A%2F%2Fwww.skiresort.info%2Fski-resort%2Finfinity-slopes-loveland%2F&cb=73890d0d35",
-    "scraped_at": "2025-11-04T19:57:25.901501"
-  },
-  {
-    "name": "Woodbury",
-    "state": "Connecticut",
-    "url": "https://www.skiresort.info/ski-resort/woodbury/",
-    "elevation_base": 168,
-    "elevation_top": 259,
-    "elevation_difference": 91,
-    "slopes_total_km": 9.6,
-    "slopes_easy_km": 3.5,
-    "slopes_intermediate_km": 3.5,
-    "slopes_difficult_km": 2.6,
-    "lifts_total": 4,
-    "day_pass_adult": null,
-    "website": "https://www.alpenblick.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "type": "gondola",
-        "name": "Gondola (pattern detected)",
-        "detachable": false,
-        "fixed_grip": false
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": "https://www.skiresort.info//adserver.skiresort-service.com/www/delivery/lg.php?bannerid=8487&campaignid=30&zoneid=72&loc=https%3A%2F%2Fwww.skiresort.info%2Fski-resort%2Fwoodbury%2Ftrail-map%2F&cb=7ae1517a0b",
-    "scraped_at": "2025-11-04T19:57:29.107338"
   },
   {
     "name": "Mohawk Mountain",
@@ -7795,52 +7403,6 @@
     "trails_total": 7,
     "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/f9/90/01/11/03351b7e2e.jpg",
     "scraped_at": "2025-11-04T19:57:41.036013"
-  },
-  {
-    "name": "Dry slopes WinterClub Indoor Ski & Snowboard – Winter Park",
-    "state": "Florida",
-    "url": "https://www.skiresort.info/ski-resort/winterclub-indoor-ski-snowboard-winter-park/",
-    "elevation_base": 30,
-    "elevation_top": 34,
-    "elevation_difference": 4,
-    "slopes_total_km": 0.1,
-    "slopes_easy_km": 0.1,
-    "slopes_intermediate_km": 0,
-    "slopes_difficult_km": 0,
-    "lifts_total": 2,
-    "day_pass_adult": null,
-    "website": "https://www.winterclubski.com/",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "WinterClub 1",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "people_mover"
-      },
-      {
-        "name": "WinterClub 2",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "people_mover"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 4,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T19:57:44.458018"
   },
   {
     "name": "Silvretta Montafon",
@@ -9096,45 +8658,6 @@
     "scraped_at": "2025-11-04T19:58:33.620165"
   },
   {
-    "name": "Blizzard Mountain",
-    "state": "Idaho",
-    "url": "https://www.skiresort.info/ski-resort/blizzard-mountain/",
-    "elevation_base": 1705,
-    "elevation_top": 1922,
-    "elevation_difference": 217,
-    "slopes_total_km": 4.4,
-    "slopes_easy_km": 1.7,
-    "slopes_intermediate_km": 2,
-    "slopes_difficult_km": 0.7,
-    "lifts_total": 1,
-    "day_pass_adult": null,
-    "website": "https://www.kraftalm.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Blizzard Mountain Ski Hill Arco (YOC 1962)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 2,
-    "trails_beginner": 0,
-    "trails_intermediate": 2,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 2,
-    "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/e3/39/96/6f/d4f613e20a.jpg",
-    "scraped_at": "2025-11-04T19:58:36.998177"
-  },
-  {
     "name": "Cottonwood Butte",
     "state": "Idaho",
     "url": "https://www.skiresort.info/ski-resort/cottonwood-butte/",
@@ -9324,7 +8847,7 @@
     "slopes_difficult_km": 0,
     "lifts_total": 1,
     "day_pass_adult": null,
-    "website": "https://www.hotelalpina.com/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "https://www.facebook.com/groups/307546062696913",
     "adult_pass_price": null,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -9363,7 +8886,7 @@
     "slopes_difficult_km": 0,
     "lifts_total": 16,
     "day_pass_adult": null,
-    "website": "https://www.gatewayparkseagle.com/",
+    "website": "https://gatewayparks.com/",
     "adult_pass_price": null,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -9380,148 +8903,6 @@
     "trails_total": 0,
     "trail_map_url": null,
     "scraped_at": "2025-11-04T19:58:56.258647"
-  },
-  {
-    "name": "Latemar – Obereggen/Pampeago/Predazzo",
-    "state": "Idaho",
-    "url": "https://www.skiresort.info/ski-resort/latemar-obereggenpampeagopredazzo/",
-    "elevation_base": 1540,
-    "elevation_top": 2388,
-    "elevation_difference": 848,
-    "slopes_total_km": 49,
-    "slopes_easy_km": 9.3,
-    "slopes_intermediate_km": 32.8,
-    "slopes_difficult_km": 6.9,
-    "lifts_total": 18,
-    "day_pass_adult": null,
-    "website": "https://www.obereggen.com",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "name": "Latemar (YOC 2025)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Ochsenweide (YOC 1999)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Stalimen-Gardoné (YOC 1995)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Laner (YOC 2016)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Reiterjoch (YOC 2019)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Absam Maierl (YOC 2005)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Campanil (YOC 2022)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Pala di Santa (YOC 2006)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Gardoné-Passo Feudo (YOC 1995)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Obereggen-Oberholz (YOC 1988)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Tresca (YOC 2023)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Obereggen (YOC 2006)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Residenza-Passo Feudo (YOC 1995)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Monte Agnello (YOC 1990)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Campo Scuola Latemar (YOC 2000)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Campo Scuola Gardoné (YOC 1997)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Eben",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Plateau",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      }
-    ],
-    "has_detachable": true,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 4,
-    "trails_beginner": 23,
-    "trails_intermediate": 23,
-    "trails_advanced": 23,
-    "trails_expert": 0,
-    "trails_total": 69,
-    "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/79/96/6c/c5/e5b333ff1d.jpg",
-    "scraped_at": "2025-11-04T19:58:59.580891"
   },
   {
     "name": "Chestnut Mountain",
@@ -9756,52 +9137,6 @@
     "scraped_at": "2025-11-04T19:59:08.742671"
   },
   {
-    "name": "Plumtree (Fawnridge) – Lake Carroll",
-    "state": "Illinois",
-    "url": "https://www.skiresort.info/ski-resort/plumtree-fawnridge-lake-carroll/",
-    "elevation_base": 248,
-    "elevation_top": 293,
-    "elevation_difference": 45,
-    "slopes_total_km": 0.6,
-    "slopes_easy_km": 0.6,
-    "slopes_intermediate_km": 0,
-    "slopes_difficult_km": 0,
-    "lifts_total": 2,
-    "day_pass_adult": null,
-    "website": "https://golakecarroll.com/",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Plumtree T-Bar",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Plumtree Tubing",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 4,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T19:59:11.994729"
-  },
-  {
     "name": "Four Lakes",
     "state": "Illinois",
     "url": "https://www.skiresort.info/ski-resort/four-lakes/",
@@ -9881,556 +9216,6 @@
     "trails_total": 1,
     "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/9e/ef/f8/83/a5fa8eb73d.jpg",
     "scraped_at": "2025-11-04T19:59:14.853109"
-  },
-  {
-    "name": "SkiWelt Wilder Kaiser-Brixental",
-    "state": "Illinois",
-    "url": "https://www.skiresort.info/ski-resort/skiwelt-wilder-kaiser-brixental/",
-    "elevation_base": 620,
-    "elevation_top": 1869,
-    "elevation_difference": 1249,
-    "slopes_total_km": 275,
-    "slopes_easy_km": 115,
-    "slopes_intermediate_km": 121,
-    "slopes_difficult_km": 39,
-    "lifts_total": 81,
-    "day_pass_adult": null,
-    "website": "https://www.skiwelt.at/",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "name": "10er Gondelbahn Hexenwasser (YOC 2020)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "10er Gondelbahn Salvistabahn (YOC 2020)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "10er Gondelbahn Hartkaiserbahn (YOC 2015)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Hans im Glück (YOC 2016)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "8er Gondelbahn Salvenbahn II (YOC 2008)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "8er Gondelbahn Choralmbahn (YOC 2008)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "8er-SkiWeltbahn (YOC 2008)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "8er Gondelbahn KiWest (YOC 2005)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "8er Gondelbahn Salvenbahn I (YOC 2004)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "8er Gondelbahn Brandstadl I (YOC 2002)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "8er Gondelbahn Brandstadl II (YOC 2002)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "8er Gondelbahn Hohe Salve (YOC 2000)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "6er Gondelbahn Alpenrosenbahn I (YOC 1987)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "6er Gondelbahn Alpenrosenbahn II (YOC 1987)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "6er Gondelbahn Hochbrixen (YOC 1986)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Brandstadlbahn (YOC 1984)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Zinsbergbahn (YOC 2019)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Fleidingbahn (YOC 2019)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Jochbahn (YOC 2015)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Aualmbahn (YOC 2014)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Osthangbahn (YOC 2010)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Eibergbahn (YOC 2024)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Foischingbahn (YOC 2000)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Schernthannbahn (YOC 2015)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Siller-Keat (YOC 2008)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Hexen6er (YOC 2004)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Ellmi's 6er (YOC 2009)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Tanzboden (YOC 2006)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Kummereralmbahn (YOC 2005)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Filzbodenbahn (YOC 2002)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Köglbahn (YOC 2000)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Almbahn (YOC 1999)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Südhangbahn (YOC 1999)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Kälbersalvenbahn (YOC 1997)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Keat (YOC 1995)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "4er Sesselbahn Astberg (YOC 1991)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Sonnenlift (YOC 2004)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Schneeberg (YOC 2003)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Kaiserexpress (YOC 2002)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Windauberg (YOC 2001)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Gampenkogel (YOC 2001)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Muldenbahn (YOC 1998)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Rinner (YOC 1995)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Talkaser (YOC 1989)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Rigibahn (YOC 1988)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Stöckl (YOC 1988)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Hohe Salve I (YOC 1983)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Hausberg (YOC 1988)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Kasbichlbahn (YOC 1986)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Ostlift (YOC 1988)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Kirchbichl (YOC 1982)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Schmiedalm (YOC 1975)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Hochfeldlift-Schwoich (YOC 1966)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Tellerschlepplift Salvista (YOC 2023)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Laubkogel (YOC 2018)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Maxilift (YOC 2011)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Würstelexpress (YOC 1997)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Knolln (YOC 1995)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Marcher (YOC 1984)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Vetterstätt (YOC 1971)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Poldangerlift (YOC 1970)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Schusterbühellift (YOC 1968)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Übungslift Dorf",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Sonnenlift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Übungslift Berg",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Sammer",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Übungslift Hochbrixen",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Babylift Scheffau",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Pfaringlift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Übungslift Hochfeld-Schwoich",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Ellmi's Zauberteppich II",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "people_mover"
-      },
-      {
-        "name": "Zauberteppich Bodenschmied",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "people_mover"
-      },
-      {
-        "name": "Ellmi's Zauberteppich I",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "people_mover"
-      },
-      {
-        "name": "Zauberteppich Söll (YOC 2025)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "people_mover"
-      },
-      {
-        "name": "Skischullift Hochbrixen",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "people_mover"
-      },
-      {
-        "name": "Zauberteppich Astberg",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "people_mover"
-      },
-      {
-        "name": "Zauberteppich Högerfeld",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "people_mover"
-      },
-      {
-        "name": "Hexenteppich",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "people_mover"
-      },
-      {
-        "name": "Sonnenband",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "people_mover"
-      },
-      {
-        "name": "Vetterstätt Zauberteppich",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "people_mover"
-      },
-      {
-        "name": "Förderband Kelchsau (YOC 2022)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "people_mover"
-      }
-    ],
-    "has_detachable": true,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 67,
-    "trails_beginner": 95,
-    "trails_intermediate": 102,
-    "trails_advanced": 32,
-    "trails_expert": 0,
-    "trails_total": 229,
-    "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/49/91/17/7b/5b0ee4cf0c.jpg",
-    "scraped_at": "2025-11-04T19:59:18.386824"
   },
   {
     "name": "Paoli Peaks",
@@ -10613,248 +9398,6 @@
     "scraped_at": "2025-11-04T19:59:24.300955"
   },
   {
-    "name": "Kronplatz (Plan de Corones)",
-    "state": "Indiana",
-    "url": "https://www.skiresort.info/ski-resort/kronplatz-plan-de-corones/",
-    "elevation_base": 973,
-    "elevation_top": 2275,
-    "elevation_difference": 1302,
-    "slopes_total_km": 121,
-    "slopes_easy_km": 58,
-    "slopes_intermediate_km": 34,
-    "slopes_difficult_km": 29,
-    "lifts_total": 31,
-    "day_pass_adult": null,
-    "website": "https://www.kronplatz.com/",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "name": "Belvedere (YOC 2015)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Skitrans Bronta (YOC 2018)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Percha-Ried (YOC 2011)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Ried-Gipfelbahn (YOC 2010)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Marchner (YOC 2009)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Olang I (YOC 2020)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Olang II (YOC 2020)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Rara (YOC 2019)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Alpen Connecting (YOC 2013)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Col Toron (YOC 2011)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Miara (YOC 2011)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Piculin (YOC 2006)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Korer (YOC 2005)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Piz de Plaies (YOC 2005)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Pedagà (YOC 2005)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Cianross (YOC 2005)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Kronplatz II (YOC 2003)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Kronplatz I (YOC 2003)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Pre da Peres (YOC 2001)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Kronplatz 2000 (YOC 2000)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Ruis (YOC 1996)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Plateau (YOC 2024)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Sonne (YOC 2017)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Arndt (YOC 2018)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Costa (YOC 1994)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Skilift Pichl Gsies (YOC 2020)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Antermoia (YOC 2016)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Berglift Gsies (St. Magdalena) (YOC 2012)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Guggenberglift Taisten (YOC 2005)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Riepenlift Antholz (YOC 2002)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Panoramalift Terenten (YOC 2000)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "planned: Ruis (YOC 2026)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "planned: Kronplatz II (YOC 2026)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "planned: Kronplatz I (YOC 2026)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      }
-    ],
-    "has_detachable": true,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 12,
-    "trails_beginner": 58,
-    "trails_intermediate": 34,
-    "trails_advanced": 29,
-    "trails_expert": 0,
-    "trails_total": 121,
-    "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/6c/c1/1f/fe/1aa33d5435.jpg",
-    "scraped_at": "2025-11-04T19:59:27.520673"
-  },
-  {
     "name": "Seven Oaks",
     "state": "Iowa",
     "url": "https://www.skiresort.info/ski-resort/seven-oaks/",
@@ -11011,127 +9554,6 @@
     "trails_total": 0,
     "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/13/38/8d/d1/2eaa925981.jpg",
     "scraped_at": "2025-11-04T19:59:36.765357"
-  },
-  {
-    "name": "Dry slopes Sleepy Hollow Sports Park – Des Moines",
-    "state": "Iowa",
-    "url": "https://www.skiresort.info/ski-resort/sleepy-hollow-sports-park-des-moines/",
-    "elevation_base": 244,
-    "elevation_top": 286,
-    "elevation_difference": 42,
-    "slopes_total_km": 0.4,
-    "slopes_easy_km": 0.4,
-    "slopes_intermediate_km": 0,
-    "slopes_difficult_km": 0,
-    "lifts_total": 2,
-    "day_pass_adult": null,
-    "website": "https://sleepyhollowevents.com/",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Sleepy Hollow Sports Park Quad",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Sleepy Hollow Sports Park Tow",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 2,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T19:59:40.605927"
-  },
-  {
-    "name": "Sunset Ski Area",
-    "state": "Iowa",
-    "url": "https://www.skiresort.info/ski-resort/sunset-ski-area/",
-    "elevation_base": 933,
-    "elevation_top": 2426,
-    "elevation_difference": 1493,
-    "slopes_total_km": null,
-    "slopes_easy_km": null,
-    "slopes_intermediate_km": null,
-    "slopes_difficult_km": null,
-    "lifts_total": 16,
-    "day_pass_adult": null,
-    "website": "https://www.muehlpointhof.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "type": "gondola",
-        "name": "Gondola (pattern detected)",
-        "detachable": false,
-        "fixed_grip": false
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T19:59:43.870178"
-  },
-  {
-    "name": "Riverside Hills",
-    "state": "Iowa",
-    "url": "https://www.skiresort.info/ski-resort/riverside-hills/",
-    "elevation_base": 1601,
-    "elevation_top": 2502,
-    "elevation_difference": 901,
-    "slopes_total_km": null,
-    "slopes_easy_km": null,
-    "slopes_intermediate_km": null,
-    "slopes_difficult_km": null,
-    "lifts_total": 16,
-    "day_pass_adult": null,
-    "website": "https://www.pachmair.com/?utm_source=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "type": "gondola",
-        "name": "Gondola (pattern detected)",
-        "detachable": false,
-        "fixed_grip": false
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T19:59:47.395108"
   },
   {
     "name": "Sugarloaf",
@@ -11843,7 +10265,7 @@
     "slopes_difficult_km": 2.5,
     "lifts_total": 3,
     "day_pass_adult": null,
-    "website": "https://www.valamar.com/de/hotel-obertauern/valamar-obertauern-hotel?utm_source=skiresort&utm_medium=listing&utm_campaign=hotels_ongoing&utm_content=obertauern_de_112022",
+    "website": "https://skinewengland.com/maine/mount-jefferson/",
     "adult_pass_price": 45,
     "child_pass_price": 39,
     "fixed_grip_only": true,
@@ -11932,51 +10354,6 @@
     "trails_total": 2,
     "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/a8/8b/bd/d6/de3a6a13b5.jpg",
     "scraped_at": "2025-11-04T20:00:20.563597"
-  },
-  {
-    "name": "Eaton Mountain",
-    "state": "Maine",
-    "url": "https://www.skiresort.info/ski-resort/eaton-mountain/",
-    "elevation_base": 50,
-    "elevation_top": 140,
-    "elevation_difference": 90,
-    "slopes_total_km": 2,
-    "slopes_easy_km": 1.5,
-    "slopes_intermediate_km": 0.5,
-    "slopes_difficult_km": 0,
-    "lifts_total": 2,
-    "day_pass_adult": null,
-    "website": "https://www.zentral.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": 15,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Eaton Mountain 1",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Eaton Mountain 2",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 2,
-    "trails_beginner": 0,
-    "trails_intermediate": 2,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 2,
-    "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/85/51/1d/dd/c612ec6912.jpg",
-    "scraped_at": "2025-11-04T20:00:23.393070"
   },
   {
     "name": "Hermon Mountain",
@@ -12123,45 +10500,6 @@
     "scraped_at": "2025-11-04T20:00:32.151644"
   },
   {
-    "name": "Quoggy Jo Ski Center – Presque Isle",
-    "state": "Maine",
-    "url": "https://www.skiresort.info/ski-resort/quoggy-jo-ski-center-presque-isle/",
-    "elevation_base": 217,
-    "elevation_top": 275,
-    "elevation_difference": 58,
-    "slopes_total_km": 0.8,
-    "slopes_easy_km": 0.8,
-    "slopes_intermediate_km": 0,
-    "slopes_difficult_km": 0,
-    "lifts_total": 1,
-    "day_pass_adult": null,
-    "website": "https://skiquoggyjo.org/",
-    "adult_pass_price": 15,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Quoggy Jo Ski Lift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 2,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:00:35.353477"
-  },
-  {
     "name": "Spruce Mountain – Jay",
     "state": "Maine",
     "url": "https://www.skiresort.info/ski-resort/spruce-mountain-jay/",
@@ -12266,7 +10604,7 @@
     "slopes_difficult_km": 0,
     "lifts_total": 1,
     "day_pass_adult": null,
-    "website": "https://www.pfandler.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "https://www.facebook.com/powderhousehill/",
     "adult_pass_price": 5,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -12291,361 +10629,6 @@
     "trails_total": 0,
     "trail_map_url": null,
     "scraped_at": "2025-11-04T20:00:45.184034"
-  },
-  {
-    "name": "Hochkönig – Maria Alm/Dienten/Mühlbach",
-    "state": "Maine",
-    "url": "https://www.skiresort.info/ski-resort/hochkoenig-maria-almdientenmuehlbach/",
-    "elevation_base": 800,
-    "elevation_top": 1900,
-    "elevation_difference": 1100,
-    "slopes_total_km": 120,
-    "slopes_easy_km": 52,
-    "slopes_intermediate_km": 41,
-    "slopes_difficult_km": 27,
-    "lifts_total": 34,
-    "day_pass_adult": null,
-    "website": "https://www.hochkoenig.at/",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "name": "Gabühelbahn (YOC 2019)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Natrunbahn (YOC 2018)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Sonnbergbahn (YOC 2018)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Sinalco-Bahn (YOC 2010)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Kings Cab (YOC 2008)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Abergbahn (YOC 1993)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Karbachalmbahn (YOC 1990)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Hochmaisbahn (YOC 2010)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Schwarzeckalmbahn (YOC 2009)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Bürglalmbahn (YOC 2011)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Schönanger (YOC 2005)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Dacheggbahn (YOC 2002)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Fellersbach (YOC 1999)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Zachhofalmbahn (YOC 1995)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Abergalm (YOC 1989)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Hinterreit I (YOC 2004)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Hinterreit II (YOC 1992)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Roßwieslift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Saukarlift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Wastlhöhelift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Zachhof Babylift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Liebenaulift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Karlift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Natrunlift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Simmerllift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Faschinglift I",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Sonnleitenlift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Grießfeldlift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Tellerlift Natrun (YOC 2020)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Arthurhauslift (YOC 1999)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Übungslift Hintermoos",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Faschinglift II",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Mahdlift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Babylift Natrun",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      }
-    ],
-    "has_detachable": true,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 38,
-    "trails_beginner": 52,
-    "trails_intermediate": 41,
-    "trails_advanced": 27,
-    "trails_expert": 0,
-    "trails_total": 120,
-    "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/76/66/6f/f1/2772613302.jpg",
-    "scraped_at": "2025-11-04T20:00:48.425734"
-  },
-  {
-    "name": "Belpiano (Schöneben)/Malga San Valentino (Haideralm)",
-    "state": "Maine",
-    "url": "https://www.skiresort.info/ski-resort/belpiano-schoenebenmalga-san-valentino-haideralm/",
-    "elevation_base": 1460,
-    "elevation_top": 2390,
-    "elevation_difference": 930,
-    "slopes_total_km": 65,
-    "slopes_easy_km": 29,
-    "slopes_intermediate_km": 30,
-    "slopes_difficult_km": 6,
-    "lifts_total": 10,
-    "day_pass_adult": null,
-    "website": "https://www.schoeneben.it/",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "name": "Höllental (YOC 2018)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "St. Valentin-Schöneben (YOC 2018)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "St. Valentin-Haideralm (YOC 1995)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Reschen-Piz Schöneben (YOC 1988)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Jochbahn (YOC 2009)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Fraitenbahn (YOC 2004)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Rojen (YOC 2001)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Zwölferkopf (YOC 1995)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Valatschlift (YOC 1968)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Pofellift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "planned: Reschen-Piz Schöneben (YOC 2026)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      }
-    ],
-    "has_detachable": true,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 4,
-    "trails_beginner": 36,
-    "trails_intermediate": 38,
-    "trails_advanced": 7,
-    "trails_expert": 0,
-    "trails_total": 81,
-    "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/dd/d3/39/95/b477690d72.jpg",
-    "scraped_at": "2025-11-04T20:00:51.566246"
   },
   {
     "name": "Wisp – McHenry (Deep Creek Lake)",
@@ -13456,52 +11439,6 @@
     "trails_total": 7,
     "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/4e/ef/fc/c0/0af1b5ae0c.jpg",
     "scraped_at": "2025-11-04T20:01:30.862209"
-  },
-  {
-    "name": "Mount Greylock – South Williamstown",
-    "state": "Massachusetts",
-    "url": "https://www.skiresort.info/ski-resort/mount-greylock-south-williamstown/",
-    "elevation_base": 387,
-    "elevation_top": 481,
-    "elevation_difference": 94,
-    "slopes_total_km": 4.8,
-    "slopes_easy_km": 1.2,
-    "slopes_intermediate_km": 3,
-    "slopes_difficult_km": 0.6,
-    "lifts_total": 2,
-    "day_pass_adult": null,
-    "website": "https://www.alpenpark-seefeld.com/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Mt. Greylock 1",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Mt. Greylock 3",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 4,
-    "trails_beginner": 0,
-    "trails_intermediate": 4,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 4,
-    "trail_map_url": "https://www.skiresort.info//adserver.skiresort-service.com/www/delivery/lg.php?bannerid=13759&campaignid=30&zoneid=72&loc=https%3A%2F%2Fwww.skiresort.info%2Fski-resort%2Fmount-greylock-south-williamstown%2Ftrail-map%2F&cb=d80a876d93",
-    "scraped_at": "2025-11-04T20:01:33.701317"
   },
   {
     "name": "The Highlands at Harbor Springs",
@@ -15533,7 +13470,7 @@
     "slopes_difficult_km": 0.5,
     "lifts_total": 3,
     "day_pass_adult": null,
-    "website": "https://www.dachsteinkoenig.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "https://www.gogebic.edu/community/mtzion.html",
     "adult_pass_price": 45,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -16025,7 +13962,7 @@
     "slopes_difficult_km": 0.1,
     "lifts_total": 3,
     "day_pass_adult": null,
-    "website": "https://www.roessle.info/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "https://cityoflakecity.com/missaukee-mountain/",
     "adult_pass_price": null,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -16064,44 +14001,6 @@
     "trails_total": 0,
     "trail_map_url": null,
     "scraped_at": "2025-11-04T20:03:17.891793"
-  },
-  {
-    "name": "Pando Park",
-    "state": "Michigan",
-    "url": "https://www.skiresort.info/ski-resort/pando-park/",
-    "elevation_base": 260,
-    "elevation_top": 300,
-    "elevation_difference": 40,
-    "slopes_total_km": 1.3,
-    "slopes_easy_km": 1,
-    "slopes_intermediate_km": 0.3,
-    "slopes_difficult_km": 0,
-    "lifts_total": 4,
-    "day_pass_adult": null,
-    "website": "https://cannonsburg.com/",
-    "adult_pass_price": 22,
-    "child_pass_price": 19,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "type": "gondola",
-        "name": "Gondola (pattern detected)",
-        "detachable": false,
-        "fixed_grip": false
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 1,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 1,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:03:21.049775"
   },
   {
     "name": "Challenge Mountain – Walloon Lake",
@@ -16155,7 +14054,7 @@
     "slopes_difficult_km": 0,
     "lifts_total": 1,
     "day_pass_adult": null,
-    "website": "https://www.parkhotel-matrei.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "https://www.rockrivertownship.org/skihill.html",
     "adult_pass_price": 5,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -16242,45 +14141,6 @@
     "scraped_at": "2025-11-04T20:03:31.413385"
   },
   {
-    "name": "Adventure Mountain – Greenland",
-    "state": "Michigan",
-    "url": "https://www.skiresort.info/ski-resort/adventure-mountain-greenland/",
-    "elevation_base": 377,
-    "elevation_top": 415,
-    "elevation_difference": 38,
-    "slopes_total_km": 0.5,
-    "slopes_easy_km": 0.2,
-    "slopes_intermediate_km": 0.3,
-    "slopes_difficult_km": 0,
-    "lifts_total": 1,
-    "day_pass_adult": null,
-    "website": "https://www.hotel-soelden-silbertal.com/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Adventure Mountain (YOC 2018)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 2,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:03:34.731697"
-  },
-  {
     "name": "John & Melissa Besse Sports Park – Gladstone",
     "state": "Michigan",
     "url": "https://www.skiresort.info/ski-resort/john-melissa-besse-sports-park-gladstone/",
@@ -16341,52 +14201,6 @@
     "scraped_at": "2025-11-04T20:03:38.014462"
   },
   {
-    "name": "Al Quaal",
-    "state": "Michigan",
-    "url": "https://www.skiresort.info/ski-resort/al-quaal/",
-    "elevation_base": 430,
-    "elevation_top": 451,
-    "elevation_difference": 21,
-    "slopes_total_km": 0.4,
-    "slopes_easy_km": 0.2,
-    "slopes_intermediate_km": 0.2,
-    "slopes_difficult_km": 0,
-    "lifts_total": 2,
-    "day_pass_adult": null,
-    "website": "https://www.badmeister.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Al Quaal 1",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Al Quaal 2",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 4,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:03:41.197166"
-  },
-  {
     "name": "Petoskey Winter Sports Park",
     "state": "Michigan",
     "url": "https://www.skiresort.info/ski-resort/petoskey-winter-sports-park/",
@@ -16424,44 +14238,6 @@
     "trails_total": 0,
     "trail_map_url": null,
     "scraped_at": "2025-11-04T20:03:45.200770"
-  },
-  {
-    "name": "Mott Mountain",
-    "state": "Michigan",
-    "url": "https://www.skiresort.info/ski-resort/mott-mountain/",
-    "elevation_base": 710,
-    "elevation_top": 2050,
-    "elevation_difference": 1340,
-    "slopes_total_km": null,
-    "slopes_easy_km": null,
-    "slopes_intermediate_km": null,
-    "slopes_difficult_km": null,
-    "lifts_total": 16,
-    "day_pass_adult": null,
-    "website": "https://www.melcherhof.com/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "type": "gondola",
-        "name": "Gondola (pattern detected)",
-        "detachable": false,
-        "fixed_grip": false
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:03:49.583279"
   },
   {
     "name": "Sillian – Thurntaler (Hochpustertal)",
@@ -17929,44 +15705,6 @@
     "trails_total": 0,
     "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/78/87/79/9e/35e38c1e7b.jpg",
     "scraped_at": "2025-11-04T20:04:56.582647"
-  },
-  {
-    "name": "Quadna Mountain",
-    "state": "Minnesota",
-    "url": "https://www.skiresort.info/ski-resort/quadna-mountain/",
-    "elevation_base": 398,
-    "elevation_top": 484,
-    "elevation_difference": 86,
-    "slopes_total_km": null,
-    "slopes_easy_km": null,
-    "slopes_intermediate_km": null,
-    "slopes_difficult_km": null,
-    "lifts_total": 2,
-    "day_pass_adult": null,
-    "website": "https://www.loefflerblick.com/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "type": "gondola",
-        "name": "Gondola (pattern detected)",
-        "detachable": false,
-        "fixed_grip": false
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:05:01.163560"
   },
   {
     "name": "Hidden Valley (MO)",
@@ -20056,51 +17794,6 @@
     "scraped_at": "2025-11-04T20:06:42.067174"
   },
   {
-    "name": "Elko Snobowl",
-    "state": "Nevada",
-    "url": "https://www.skiresort.info/ski-resort/elko-snobowl/",
-    "elevation_base": 1932,
-    "elevation_top": 2130,
-    "elevation_difference": 198,
-    "slopes_total_km": 3,
-    "slopes_easy_km": 1.5,
-    "slopes_intermediate_km": 1.5,
-    "slopes_difficult_km": 0,
-    "lifts_total": 2,
-    "day_pass_adult": null,
-    "website": "https://www.hotelseelaus.it/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": 20,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Elko Snobowl Chair",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Snobowl Beginner Tow",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 2,
-    "trails_beginner": 0,
-    "trails_intermediate": 4,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 4,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:06:46.215279"
-  },
-  {
     "name": "Ruby Mountain",
     "state": "Nevada",
     "url": "https://www.skiresort.info/ski-resort/ruby-mountain/",
@@ -20137,421 +17830,6 @@
     "trails_total": 0,
     "trail_map_url": null,
     "scraped_at": "2025-11-04T20:06:49.868557"
-  },
-  {
-    "name": "Indoor ski area Las Vegas Wet (planned)",
-    "state": "Nevada",
-    "url": "https://www.skiresort.info/ski-resort/las-vegas-wet-planned/",
-    "elevation_base": 850,
-    "elevation_top": 1800,
-    "elevation_difference": 950,
-    "slopes_total_km": null,
-    "slopes_easy_km": null,
-    "slopes_intermediate_km": null,
-    "slopes_difficult_km": null,
-    "lifts_total": 16,
-    "day_pass_adult": null,
-    "website": "https://www.schoenruh-seefeld.com/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "type": "gondola",
-        "name": "Gondola (pattern detected)",
-        "detachable": false,
-        "fixed_grip": false
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:06:53.206637"
-  },
-  {
-    "name": "Pfelders (Moos in Passeier)",
-    "state": "Nevada",
-    "url": "https://www.skiresort.info/ski-resort/pfelders-moos-in-passeier/",
-    "elevation_base": 1601,
-    "elevation_top": 2502,
-    "elevation_difference": 901,
-    "slopes_total_km": 18,
-    "slopes_easy_km": 5,
-    "slopes_intermediate_km": 9,
-    "slopes_difficult_km": 4,
-    "lifts_total": 4,
-    "day_pass_adult": null,
-    "website": "http://www.pfelders.info/de/winterurlaub/skigebiet-pfelders-im-passeiertal.asp",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "name": "Grünboden-Express (YOC 2007)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Karjoch (YOC 2009)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Zeppichl (YOC 2021)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Gampen (YOC 1964)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      }
-    ],
-    "has_detachable": true,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 4,
-    "trails_beginner": 6,
-    "trails_intermediate": 14,
-    "trails_advanced": 5,
-    "trails_expert": 0,
-    "trails_total": 25,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:06:56.180234"
-  },
-  {
-    "name": "Arosa Lenzerheide",
-    "state": "Nevada",
-    "url": "https://www.skiresort.info/ski-resort/arosa-lenzerheide/",
-    "elevation_base": 1229,
-    "elevation_top": 2865,
-    "elevation_difference": 1636,
-    "slopes_total_km": 225,
-    "slopes_easy_km": 110,
-    "slopes_intermediate_km": 87,
-    "slopes_difficult_km": 28,
-    "lifts_total": 43,
-    "day_pass_adult": null,
-    "website": "https://arosalenzerheide.swiss/",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "name": "Verbindungsbahn Hörnli-Urdenfürggli (YOC 2013)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "tram"
-      },
-      {
-        "name": "Weisshornbahn II (YOC 1992)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "tram"
-      },
-      {
-        "name": "Weisshornbahn I (YOC 1992)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "tram"
-      },
-      {
-        "name": "Rothornbahn 2 (YOC 2015)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "tram"
-      },
-      {
-        "name": "Panoramabahn Churwalden-Heidbüel (YOC 2015)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Rothornbahn 1 (Canols-Scharmoin) (YOC 2010)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Hörnli-Express (YOC 1986)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Innerarosa-Tschuggen (Kulm) (YOC 2010)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "Brüggerhorn (YOC 2019)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Motta-Urdenfürggli (YOC 2013)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Heimberg-Motta (YOC 2013)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Weisshorn Speed (YOC 1999)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Stätzerhorn (YOC 1999)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Alp Lavoz-Steinhaus (YOC 1997)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Rungg–Stätzertäli (YOC 2024)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Plattenhorn (YOC 2002)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Carmenna (YOC 2000)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Val Schameala-Cumascheals (YOC 1999)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Parpan-Heimberg (YOC 2004)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Pradaschier (YOC 1999)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Hörnli (YOC 1994)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Pedra Grossa (YOC 1990)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Obertor (Ost-West Verbindung) (YOC 2015)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Scalottas (YOC 1993)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Tgantieni (YOC 1988)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Tschuggen Ost (YOC 1983)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "Prätschli (YOC 1998)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Fadail 2 (YOC 1994)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Fadail 1 (YOC 1983)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Fastatsch (YOC 1977)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Ried (YOC 1976)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Crestas (YOC 1975)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Tschuggen West (YOC 1972)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Gertrud (YOC 1972)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Crappa Grossa (YOC 1968)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Windegga (YOC 1968)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Proschieri (YOC 1966)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Dieschen (YOC 1964)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Scharmoin (YOC 1963)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Valbella (YOC 1961)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Tomeli (YOC 1960)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Pradafenz (YOC 1973)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Heimberg Ponylift",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "planned: Hörnli-Express (YOC 2026)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "planned: Hörnli (YOC 2028)",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      }
-    ],
-    "has_detachable": true,
-    "has_gondola": true,
-    "has_tram": true,
-    "has_funicular": false,
-    "surface_lifts_count": 34,
-    "trails_beginner": 91,
-    "trails_intermediate": 73,
-    "trails_advanced": 23,
-    "trails_expert": 0,
-    "trails_total": 187,
-    "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/42/22/2e/e0/977b1aff62.jpg",
-    "scraped_at": "2025-11-04T20:06:59.584043"
   },
   {
     "name": "Bretton Woods",
@@ -21568,74 +18846,6 @@
     "scraped_at": "2025-11-04T20:07:40.174029"
   },
   {
-    "name": "The Balsams",
-    "state": "New Hampshire",
-    "url": "https://www.skiresort.info/ski-resort/the-balsams/",
-    "elevation_base": 541,
-    "elevation_top": 838,
-    "elevation_difference": 297,
-    "slopes_total_km": 12.6,
-    "slopes_easy_km": 3.4,
-    "slopes_intermediate_km": 4,
-    "slopes_difficult_km": 5.2,
-    "lifts_total": 1,
-    "day_pass_adult": null,
-    "website": "https://www.thebalsamsresort.com",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "name": "Balsams (YOC 2002)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "planned: The Balsams Gondola",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "gondola"
-      },
-      {
-        "name": "planned: The Balsams Quad Express 1",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "planned: The Balsams Quad Express 2",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "planned: The Balsams Triple Express 1",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      },
-      {
-        "name": "planned: The Balsams Triple Express 2",
-        "detachable": true,
-        "fixed_grip": false,
-        "type": "chairlift"
-      }
-    ],
-    "has_detachable": true,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 0,
-    "trails_intermediate": 5,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 5,
-    "trail_map_url": "https://www.skiresort.info//adserver.skiresort-service.com/www/delivery/lg.php?bannerid=13759&campaignid=30&zoneid=72&loc=https%3A%2F%2Fwww.skiresort.info%2Fski-resort%2Fthe-balsams%2Ftrail-map%2F&cb=6ca68ae12b",
-    "scraped_at": "2025-11-04T20:07:43.114551"
-  },
-  {
     "name": "Crotched Mountain",
     "state": "New Hampshire",
     "url": "https://www.skiresort.info/ski-resort/crotched-mountain/",
@@ -22065,7 +19275,7 @@
     "slopes_difficult_km": 0,
     "lifts_total": 2,
     "day_pass_adult": null,
-    "website": "https://www.hotelseelaus.it/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "https://www.facebook.com/FranklinOutingClub/",
     "adult_pass_price": null,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -22253,44 +19463,6 @@
     "trails_total": 0,
     "trail_map_url": null,
     "scraped_at": "2025-11-04T20:08:23.224009"
-  },
-  {
-    "name": "Lynx Creek",
-    "state": "New Hampshire",
-    "url": "https://www.skiresort.info/ski-resort/lynx-creek/",
-    "elevation_base": 866,
-    "elevation_top": 1338,
-    "elevation_difference": 472,
-    "slopes_total_km": null,
-    "slopes_easy_km": null,
-    "slopes_intermediate_km": null,
-    "slopes_difficult_km": null,
-    "lifts_total": 16,
-    "day_pass_adult": null,
-    "website": "https://www.hohenhaus.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "type": "gondola",
-        "name": "Gondola (pattern detected)",
-        "detachable": false,
-        "fixed_grip": false
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:08:26.557438"
   },
   {
     "name": "Mountain Creek – Vernon",
@@ -25031,57 +22203,6 @@
     "scraped_at": "2025-11-04T20:10:18.976468"
   },
   {
-    "name": "Cockaigne",
-    "state": "New York",
-    "url": "https://www.skiresort.info/ski-resort/cockaigne/",
-    "elevation_base": 487,
-    "elevation_top": 600,
-    "elevation_difference": 113,
-    "slopes_total_km": 4.8,
-    "slopes_easy_km": 2.2,
-    "slopes_intermediate_km": 1.8,
-    "slopes_difficult_km": 0.8,
-    "lifts_total": 3,
-    "day_pass_adult": null,
-    "website": "https://www.hotel-lenz.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "B. Macaroon (YOC 1963)",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "C. Marzipan",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "A. Jelly Roll",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 2,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/7c/c9/99/93/bb4fd0b700.jpg",
-    "scraped_at": "2025-11-04T20:10:22.192281"
-  },
-  {
     "name": "Thunder Ridge",
     "state": "New York",
     "url": "https://www.skiresort.info/ski-resort/thunder-ridge/",
@@ -25432,44 +22553,6 @@
     "scraped_at": "2025-11-04T20:10:41.278823"
   },
   {
-    "name": "Big Tupper – Tupper Lake",
-    "state": "New York",
-    "url": "https://www.skiresort.info/ski-resort/big-tupper-tupper-lake/",
-    "elevation_base": 609,
-    "elevation_top": 1082,
-    "elevation_difference": 473,
-    "slopes_total_km": 12,
-    "slopes_easy_km": 5,
-    "slopes_intermediate_km": 5,
-    "slopes_difficult_km": 2,
-    "lifts_total": 5,
-    "day_pass_adult": null,
-    "website": "https://www.hotel-outside.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "type": "gondola",
-        "name": "Gondola (pattern detected)",
-        "detachable": false,
-        "fixed_grip": false
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 7,
-    "trails_intermediate": 8,
-    "trails_advanced": 2,
-    "trails_expert": 0,
-    "trails_total": 17,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:10:44.561391"
-  },
-  {
     "name": "Maple Ski Ridge",
     "state": "New York",
     "url": "https://www.skiresort.info/ski-resort/maple-ski-ridge/",
@@ -25564,58 +22647,6 @@
     "trails_total": 0,
     "trail_map_url": null,
     "scraped_at": "2025-11-04T20:10:50.995638"
-  },
-  {
-    "name": "Val Bialas Ski Center – Utica",
-    "state": "New York",
-    "url": "https://www.skiresort.info/ski-resort/val-bialas-ski-center-utica/",
-    "elevation_base": 175,
-    "elevation_top": 251,
-    "elevation_difference": 76,
-    "slopes_total_km": 1.8,
-    "slopes_easy_km": 0.8,
-    "slopes_intermediate_km": 0.4,
-    "slopes_difficult_km": 0.6,
-    "lifts_total": 3,
-    "day_pass_adult": null,
-    "website": "https://www.aelpili.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Val Bialas Chair Lift",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Handle Tow 1",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      },
-      {
-        "name": "Handle Tow 2",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 4,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/a4/4d/d7/76/772ac018b6.jpg",
-    "scraped_at": "2025-11-04T20:10:54.223306"
   },
   {
     "name": "Toggenburg Ski Center",
@@ -25832,84 +22863,6 @@
     "scraped_at": "2025-11-04T20:11:09.834882"
   },
   {
-    "name": "The Ridge – Le Roy",
-    "state": "New York",
-    "url": "https://www.skiresort.info/ski-resort/the-ridge-le-roy/",
-    "elevation_base": 207,
-    "elevation_top": 245,
-    "elevation_difference": 38,
-    "slopes_total_km": 0.7,
-    "slopes_easy_km": 0.4,
-    "slopes_intermediate_km": 0.3,
-    "slopes_difficult_km": 0,
-    "lifts_total": 1,
-    "day_pass_adult": null,
-    "website": "https://www.hotel-soelden-silbertal.com/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Frost Ridge T-Bar",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 2,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:11:13.017030"
-  },
-  {
-    "name": "Indian Lake",
-    "state": "New York",
-    "url": "https://www.skiresort.info/ski-resort/indian-lake/",
-    "elevation_base": 532,
-    "elevation_top": 599,
-    "elevation_difference": 67,
-    "slopes_total_km": 0.9,
-    "slopes_easy_km": 0.6,
-    "slopes_intermediate_km": 0.3,
-    "slopes_difficult_km": 0,
-    "lifts_total": 1,
-    "day_pass_adult": null,
-    "website": "https://www.maiensee.com/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Indian Lake T-Bar",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 2,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:11:16.514776"
-  },
-  {
     "name": "Brantling",
     "state": "New York",
     "url": "https://www.skiresort.info/ski-resort/brantling/",
@@ -26085,82 +23038,6 @@
     "trails_total": 0,
     "trail_map_url": null,
     "scraped_at": "2025-11-04T20:11:29.453503"
-  },
-  {
-    "name": "Scotch Valley Resort",
-    "state": "New York",
-    "url": "https://www.skiresort.info/ski-resort/scotch-valley-resort/",
-    "elevation_base": 1229,
-    "elevation_top": 2865,
-    "elevation_difference": 1636,
-    "slopes_total_km": null,
-    "slopes_easy_km": null,
-    "slopes_intermediate_km": null,
-    "slopes_difficult_km": null,
-    "lifts_total": 16,
-    "day_pass_adult": null,
-    "website": "https://www.aelpili.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "type": "gondola",
-        "name": "Gondola (pattern detected)",
-        "detachable": false,
-        "fixed_grip": false
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:11:32.822349"
-  },
-  {
-    "name": "Huntington",
-    "state": "New York",
-    "url": "https://www.skiresort.info/ski-resort/huntington/",
-    "elevation_base": 1845,
-    "elevation_top": 2869,
-    "elevation_difference": 1024,
-    "slopes_total_km": null,
-    "slopes_easy_km": null,
-    "slopes_intermediate_km": null,
-    "slopes_difficult_km": null,
-    "lifts_total": 16,
-    "day_pass_adult": null,
-    "website": "https://www.melcherhof.com/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "type": "gondola",
-        "name": "Gondola (pattern detected)",
-        "detachable": false,
-        "fixed_grip": false
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:11:36.095043"
   },
   {
     "name": "Sugar Mountain",
@@ -27059,7 +23936,7 @@
     "slopes_difficult_km": 1,
     "lifts_total": 6,
     "day_pass_adult": null,
-    "website": "https://www.alpenblick.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "https://www.snowtrails.com/",
     "adult_pass_price": 65,
     "child_pass_price": 55,
     "fixed_grip_only": true,
@@ -28480,44 +25357,6 @@
     "trails_total": 7,
     "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/63/34/43/3f/6679083548.jpg",
     "scraped_at": "2025-11-04T20:13:11.135522"
-  },
-  {
-    "name": "Mt. Bailey",
-    "state": "Oregon",
-    "url": "https://www.skiresort.info/ski-resort/mt-bailey/",
-    "elevation_base": 1700,
-    "elevation_top": 2600,
-    "elevation_difference": 900,
-    "slopes_total_km": null,
-    "slopes_easy_km": null,
-    "slopes_intermediate_km": null,
-    "slopes_difficult_km": null,
-    "lifts_total": 16,
-    "day_pass_adult": null,
-    "website": "https://www.maiensee.com/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "type": "gondola",
-        "name": "Gondola (pattern detected)",
-        "detachable": false,
-        "fixed_grip": false
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:13:14.847669"
   },
   {
     "name": "Sand ski area Sand Master Park – Florence",
@@ -29963,56 +26802,6 @@
     "scraped_at": "2025-11-04T20:13:57.690922"
   },
   {
-    "name": "Alpine Mountain Ski & Snow Tubing Center",
-    "state": "Pennsylvania",
-    "url": "https://www.skiresort.info/ski-resort/alpine-mountain-ski-snow-tubing-center/",
-    "elevation_base": 198,
-    "elevation_top": 351,
-    "elevation_difference": 153,
-    "slopes_total_km": 8,
-    "slopes_easy_km": 2,
-    "slopes_intermediate_km": 4,
-    "slopes_difficult_km": 2,
-    "lifts_total": 3,
-    "day_pass_adult": null,
-    "website": "https://www.alte-post-fieberbrunn.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": 55,
-    "child_pass_price": 45,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Star Track Enterprise Quad",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Alpine Quad Lift",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Tyro Double Chair",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 2,
-    "trails_intermediate": 7,
-    "trails_advanced": 2,
-    "trails_expert": 0,
-    "trails_total": 11,
-    "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/62/2c/ce/e9/417de6491f.jpg",
-    "scraped_at": "2025-11-04T20:14:00.721231"
-  },
-  {
     "name": "Big Bear at Masthope Mountain",
     "state": "Pennsylvania",
     "url": "https://www.skiresort.info/ski-resort/big-bear-at-masthope-mountain/",
@@ -31017,57 +27806,6 @@
     "trails_total": 0,
     "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/5b/b9/92/2a/ca55ed3f9e.jpg",
     "scraped_at": "2025-11-04T20:14:46.543293"
-  },
-  {
-    "name": "Deer Mountain",
-    "state": "South Dakota",
-    "url": "https://www.skiresort.info/ski-resort/deer-mountain/",
-    "elevation_base": 1841,
-    "elevation_top": 2028,
-    "elevation_difference": 187,
-    "slopes_total_km": 11,
-    "slopes_easy_km": 5,
-    "slopes_intermediate_km": 4,
-    "slopes_difficult_km": 2,
-    "lifts_total": 3,
-    "day_pass_adult": null,
-    "website": "https://www.badmeister.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Deer Mountain # Chair Lift 1",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Deer Mountain # Chair Lift 2",
-        "detachable": false,
-        "fixed_grip": true,
-        "type": "chairlift"
-      },
-      {
-        "name": "Deer Mountain # Poma Lift 1",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 2,
-    "trails_beginner": 6,
-    "trails_intermediate": 7,
-    "trails_advanced": 2,
-    "trails_expert": 0,
-    "trails_total": 15,
-    "trail_map_url": "https://www.skiresort.info/typo3temp/assets/_processed_/b6/6f/fe/ed/f6a3b1d6b4.jpg",
-    "scraped_at": "2025-11-04T20:14:49.506348"
   },
   {
     "name": "Great Bear Ski Valley",
@@ -33441,44 +30179,6 @@
     "scraped_at": "2025-11-04T20:15:58.004630"
   },
   {
-    "name": "Whisper Ridge",
-    "state": "Utah",
-    "url": "https://www.skiresort.info/ski-resort/whisper-ridge/",
-    "elevation_base": 1695,
-    "elevation_top": 3210,
-    "elevation_difference": 1515,
-    "slopes_total_km": null,
-    "slopes_easy_km": null,
-    "slopes_intermediate_km": null,
-    "slopes_difficult_km": null,
-    "lifts_total": 16,
-    "day_pass_adult": null,
-    "website": "https://www.hotelalpenrose.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "type": "gondola",
-        "name": "Gondola (pattern detected)",
-        "detachable": false,
-        "fixed_grip": false
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:16:01.267720"
-  },
-  {
     "name": "Diamond Peaks",
     "state": "Utah",
     "url": "https://www.skiresort.info/ski-resort/diamond-peaks/",
@@ -35358,84 +32058,6 @@
     "scraped_at": "2025-11-04T20:17:17.932799"
   },
   {
-    "name": "Farr's Hill – Randolph",
-    "state": "Vermont",
-    "url": "https://www.skiresort.info/ski-resort/farrs-hill-randolph/",
-    "elevation_base": 225,
-    "elevation_top": 270,
-    "elevation_difference": 45,
-    "slopes_total_km": 0.6,
-    "slopes_easy_km": 0.6,
-    "slopes_intermediate_km": 0,
-    "slopes_difficult_km": 0,
-    "lifts_total": 1,
-    "day_pass_adult": null,
-    "website": "https://www.landal.de/parks/salztal-paradies?utm_source=skiresort&utm_medium=partner&utm_campaign=lgp_de&utm_content=jahreseintrag-sds",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Farr's Hill (YOC 2021)",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 2,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:17:21.275576"
-  },
-  {
-    "name": "Hard'ack (Aldis Hill) – St. Albans",
-    "state": "Vermont",
-    "url": "https://www.skiresort.info/ski-resort/hardack-aldis-hill-st-albans/",
-    "elevation_base": 190,
-    "elevation_top": 230,
-    "elevation_difference": 40,
-    "slopes_total_km": 0.2,
-    "slopes_easy_km": 0.2,
-    "slopes_intermediate_km": 0,
-    "slopes_difficult_km": 0,
-    "lifts_total": 1,
-    "day_pass_adult": null,
-    "website": "https://www.valamar.com/de/hotel-obertauern/kesselspitze-valamar-collection-hotel?utm_source=skiresort&utm_medium=listing&utm_campaign=hotels_ongoing&utm_content=kesselspitze_de_112022",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Hard'ack Ski Hill",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 2,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/13/31/13/39/3b9fbd8697.jpeg",
-    "scraped_at": "2025-11-04T20:17:24.383595"
-  },
-  {
     "name": "Wintergreen Resort",
     "state": "Virginia",
     "url": "https://www.skiresort.info/ski-resort/wintergreen-resort/",
@@ -35637,7 +32259,7 @@
     "slopes_difficult_km": 0.2,
     "lifts_total": 2,
     "day_pass_adult": null,
-    "website": "https://www.allgaeuer-berghof.de/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "https://thehomestead.ltibooking.com/categories/lift-tickets-rentals",
     "adult_pass_price": 64,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -35668,44 +32290,6 @@
     "trails_total": 0,
     "trail_map_url": "https://www.skiresort.info/fileadmin/_processed_/55/59/93/34/b16ea2522a.jpg",
     "scraped_at": "2025-11-04T20:17:36.120190"
-  },
-  {
-    "name": "Indoor ski area Fairfax Peak (planned)",
-    "state": "Virginia",
-    "url": "https://www.skiresort.info/ski-resort/fairfax-peak-planned/",
-    "elevation_base": 50,
-    "elevation_top": 80,
-    "elevation_difference": 30,
-    "slopes_total_km": 0.5,
-    "slopes_easy_km": 0.5,
-    "slopes_intermediate_km": 0,
-    "slopes_difficult_km": 0,
-    "lifts_total": 2,
-    "day_pass_adult": null,
-    "website": "https://www.peak-soelden.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": false,
-    "lift_details": [
-      {
-        "type": "gondola",
-        "name": "Gondola (pattern detected)",
-        "detachable": false,
-        "fixed_grip": false
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": true,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 0,
-    "trails_beginner": 0,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 0,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:17:39.430214"
   },
   {
     "name": "Dry slopes Inside Ski Training Center – Leesburg",
@@ -36688,7 +33272,7 @@
     "slopes_difficult_km": 2.5,
     "lifts_total": 2,
     "day_pass_adult": null,
-    "website": "https://www.pradasresort.ch/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "hhttps://www.facebook.com/SitzmarkSkiArea/",
     "adult_pass_price": 50,
     "child_pass_price": 33,
     "fixed_grip_only": true,
@@ -36899,7 +33483,7 @@
     "slopes_difficult_km": 0,
     "lifts_total": 3,
     "day_pass_adult": null,
-    "website": "https://www.parkhotel-matrei.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "https://www.facebook.com/meanylodge.org/",
     "adult_pass_price": null,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -37029,7 +33613,7 @@
     "slopes_difficult_km": 0,
     "lifts_total": 2,
     "day_pass_adult": null,
-    "website": "https://www.alpenhof.com/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "http://www.sahalie.org/chair2/Home.aspx",
     "adult_pass_price": null,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -38799,7 +35383,7 @@
     "slopes_difficult_km": 1.3,
     "lifts_total": 4,
     "day_pass_adult": null,
-    "website": "https://www.maiensee.com/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "https://www.facebook.com/CAMP10SKIAREA/",
     "adult_pass_price": null,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -38976,7 +35560,7 @@
     "slopes_difficult_km": 0,
     "lifts_total": 4,
     "day_pass_adult": null,
-    "website": "https://www.landal.de/parks/salztal-paradies?utm_source=skiresort&utm_medium=partner&utm_campaign=lgp_de&utm_content=jahreseintrag-sds",
+    "website": "https://townofnavarino.org/navarino-slopes/",
     "adult_pass_price": null,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -39101,52 +35685,6 @@
     "scraped_at": "2025-11-04T20:20:19.127093"
   },
   {
-    "name": "Skyline – Friendship",
-    "state": "Wisconsin",
-    "url": "https://www.skiresort.info/ski-resort/skyline-friendship/",
-    "elevation_base": 296,
-    "elevation_top": 392,
-    "elevation_difference": 96,
-    "slopes_total_km": 1.7,
-    "slopes_easy_km": 1,
-    "slopes_intermediate_km": 0.4,
-    "slopes_difficult_km": 0.3,
-    "lifts_total": 2,
-    "day_pass_adult": null,
-    "website": "https://www.badmeister.at/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
-    "adult_pass_price": null,
-    "child_pass_price": null,
-    "fixed_grip_only": true,
-    "lift_details": [
-      {
-        "name": "Skyline Lift 1",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "tbar_jbar"
-      },
-      {
-        "name": "Skiline Lift 2",
-        "detachable": false,
-        "fixed_grip": false,
-        "type": "surface_lift",
-        "subtype": "rope_tow"
-      }
-    ],
-    "has_detachable": false,
-    "has_gondola": false,
-    "has_tram": false,
-    "has_funicular": false,
-    "surface_lifts_count": 4,
-    "trails_beginner": 1,
-    "trails_intermediate": 0,
-    "trails_advanced": 0,
-    "trails_expert": 0,
-    "trails_total": 1,
-    "trail_map_url": null,
-    "scraped_at": "2025-11-04T20:20:22.339017"
-  },
-  {
     "name": "Paul Bunyan Ski Hill",
     "state": "Wisconsin",
     "url": "https://www.skiresort.info/ski-resort/paul-bunyan-ski-hill/",
@@ -39159,7 +35697,7 @@
     "slopes_difficult_km": 0,
     "lifts_total": 2,
     "day_pass_adult": null,
-    "website": "https://www.maiensee.com/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "https://www.facebook.com/p/Paul-Bunyan-Ski-Hill-100057158511735/",
     "adult_pass_price": null,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -39265,7 +35803,7 @@
     "slopes_difficult_km": 0,
     "lifts_total": 5,
     "day_pass_adult": null,
-    "website": "https://www.hotelalpina.com/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "https://kettlebowl.org/",
     "adult_pass_price": 10,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -39371,7 +35909,7 @@
     "slopes_difficult_km": 0,
     "lifts_total": 3,
     "day_pass_adult": null,
-    "website": "https://www.alpinjuwel.at/hotel/topics/all-in-alpine-ski-classic.php?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "https://www.greenbaywi.gov/1181/Triangle-Sports-Area",
     "adult_pass_price": null,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -39477,7 +36015,7 @@
     "slopes_difficult_km": 0,
     "lifts_total": 3,
     "day_pass_adult": null,
-    "website": "https://www.hotelalpina.com/?utm_source=skiresort&utm_medium=skiresort&utm_campaign=skiresort",
+    "website": "https://www.co.portage.wi.gov/329/Standing-Rocks-Park",
     "adult_pass_price": 16,
     "child_pass_price": null,
     "fixed_grip_only": true,
@@ -39583,7 +36121,7 @@
     "slopes_difficult_km": 0,
     "lifts_total": 1,
     "day_pass_adult": null,
-    "website": "https://www.valamar.com/de/hotel-obertauern/kesselspitze-valamar-collection-hotel?utm_source=skiresort&utm_medium=listing&utm_campaign=hotels_ongoing&utm_content=kesselspitze_de_112022",
+    "website": "https://www.facebook.com/p/Nutt-Hill-Plymouth-WI-100091542431683/",
     "adult_pass_price": null,
     "child_pass_price": null,
     "fixed_grip_only": true,
