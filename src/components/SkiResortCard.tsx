@@ -105,8 +105,8 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
           </div>
           {resort.lifts.fixedGripOnly && (
               <div className="col-span-2 rounded-lg p-2 animate-danger-pulse" style={{background: 'linear-gradient(45deg, #ff4444, #cc0000)', border: '2px solid #990000'}}>
-                <span className="text-white font-bold" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>⚠️ WARNING:</span>
-                <span className="text-white px-2 py-1 rounded-xl text-sm font-bold border border-red-800 ml-2" style={{background: 'linear-gradient(45deg, #ff6b6b, #ff4757)', textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>☠️ Fixed-grip only ☠️</span>
+                <div className="text-white font-bold" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>⚠️ WARNING:</div>
+                <div className="text-white px-2 py-1 rounded-xl text-sm font-bold border border-red-800 mt-2" style={{background: 'linear-gradient(45deg, #ff6b6b, #ff4757)', textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>☠️ Fixed-grip only ☠️</div>
               </div>
             )}
         </div>
