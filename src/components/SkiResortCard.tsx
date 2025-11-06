@@ -61,20 +61,20 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
           <h4 className="text-gray-800 mt-4 mb-2 text-base border-b border-gray-200 pb-1">Mountain Stats</h4>
           <div className="grid gap-2 mb-4" style={{gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))'}}>
             <div className="flex justify-between items-center py-1">
-              <span className="text-sm text-gray-600">Summit:</span>
-              <span className="font-semibold text-gray-800 text-sm">{resort.elevation.summit ? `${resort.elevation.summit.toLocaleString()} ft` : 'N/A'}</span>
+              <span className="text-xs text-gray-600">Summit:</span>
+              <span className="font-semibold text-gray-800 text-xs">{resort.elevation.summit ? `${resort.elevation.summit.toLocaleString()} ft` : 'N/A'}</span>
             </div>
             <div className="flex justify-between items-center py-1">
-              <span className="text-sm text-gray-600">Base:</span>
-              <span className="font-semibold text-gray-800 text-sm">{resort.elevation.base ? `${resort.elevation.base.toLocaleString()} ft` : 'N/A'}</span>
+              <span className="text-xs text-gray-600">Base:</span>
+              <span className="font-semibold text-gray-800 text-xs">{resort.elevation.base ? `${resort.elevation.base.toLocaleString()} ft` : 'N/A'}</span>
             </div>
             <div className="flex justify-between items-center py-1">
-              <span className="text-sm text-gray-600">Vertical:</span>
-              <span className="font-semibold text-gray-800 text-sm">{resort.elevation.vertical ? `${resort.elevation.vertical.toLocaleString()} ft` : 'N/A'}</span>
+              <span className="text-xs text-gray-600">Vertical:</span>
+              <span className="font-semibold text-gray-800 text-xs">{resort.elevation.vertical ? `${resort.elevation.vertical.toLocaleString()} ft` : 'N/A'}</span>
             </div>
             <div className="flex justify-between items-center py-1">
-              <span className="text-sm text-gray-600">Skiable Acres:</span>
-              <span className="font-semibold text-gray-800 text-sm">{resort.skiableAcres !== null && resort.skiableAcres !== undefined ? resort.skiableAcres.toLocaleString() : 'N/A'}</span>
+              <span className="text-xs text-gray-600">Skiable Acres:</span>
+              <span className="font-semibold text-gray-800 text-xs">{resort.skiableAcres !== null && resort.skiableAcres !== undefined ? resort.skiableAcres.toLocaleString() : 'N/A'}</span>
             </div>
           </div>
         </div>
@@ -83,30 +83,30 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
           <h4 className="text-gray-800 mt-4 mb-2 text-base border-b border-gray-200 pb-1">Lifts & Trails</h4>
           <div className="grid gap-2 mb-4" style={{gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))'}}>
             <div className="flex justify-between items-center py-1">
-              <span className="text-sm text-gray-600">Total Lifts:</span>
-              <span className="font-semibold text-gray-800 text-sm">{resort.lifts.total ?? 'N/A'}</span>
+              <span className="text-xs text-gray-600">Total Lifts:</span>
+              <span className="font-semibold text-gray-800 text-xs">{resort.lifts.total ?? 'N/A'}</span>
             </div>
             <div className="flex justify-between items-center py-1">
-              <span className="text-sm text-gray-600">Chairlifts:</span>
-              <span className="font-semibold text-gray-800 text-sm">{resort.lifts.chairlifts ?? 0}</span>
+              <span className="text-xs text-gray-600">Chairlifts:</span>
+              <span className="font-semibold text-gray-800 text-xs">{resort.lifts.chairlifts ?? 0}</span>
             </div>
             <div className="flex justify-between items-center py-1">
-              <span className="text-sm text-gray-600">Surface Lifts:</span>
-              <span className="font-semibold text-gray-800 text-sm">{resort.lifts.surfaceLifts ?? 0}</span>
+              <span className="text-xs text-gray-600">Surface Lifts:</span>
+              <span className="font-semibold text-gray-800 text-xs">{resort.lifts.surfaceLifts ?? 0}</span>
             </div>
             <div className="flex justify-between items-center py-1">
-              <span className="text-sm text-gray-600">Gondolas/Trams:</span>
-              <span className="font-semibold text-gray-800 text-sm">{resort.lifts.gondolas ?? 0}</span>
+              <span className="text-xs text-gray-600">Gondolas/Trams:</span>
+              <span className="font-semibold text-gray-800 text-xs">{resort.lifts.gondolas ?? 0}</span>
             </div>
             <div className="flex justify-between items-center py-1">
-              <span className="text-sm text-gray-600">Funiculars:</span>
-              <span className="font-semibold text-gray-800 text-sm">{resort.lifts.funiculars ?? 0}</span>
+              <span className="text-xs text-gray-600">Funiculars:</span>
+              <span className="font-semibold text-gray-800 text-xs">{resort.lifts.funiculars ?? 0}</span>
             </div>
           </div>
           {resort.lifts.fixedGripOnly && (
               <div className="col-span-2 rounded-lg p-2 animate-danger-pulse" style={{background: 'linear-gradient(45deg, #ff4444, #cc0000)', border: '2px solid #990000'}}>
                 <div className="text-white font-bold" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>⚠️ WARNING:</div>
-                <div className="text-white px-2 py-1 rounded-xl text-sm font-bold border border-red-800 mt-2" style={{background: 'linear-gradient(45deg, #ff6b6b, #ff4757)', textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>☠️ Fixed-grip only ☠️</div>
+                <div className="text-white px-2 py-1 rounded-xl text-xs font-bold border border-red-800 mt-2" style={{background: 'linear-gradient(45deg, #ff6b6b, #ff4757)', textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>☠️ Fixed-grip only ☠️</div>
               </div>
             )}
         </div>
@@ -163,14 +163,14 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
 
         <div className="mt-4 pt-4 border-t border-gray-200">
           {(resort.adult_pass_price || resort.child_pass_price) && (
-            <div className="flex justify-between items-center py-1">
-              <span className="text-sm text-gray-600">Lift Ticket Price(s):</span>
-                <div>
+            <div className="py-1">
+              <span className="text-xs text-gray-600">Lift Ticket Price(s):</span>
+                <div className="flex justify-between items-center">
                 {resort.adult_pass_price && (
-                  <span className="font-semibold text-gray-800 text-sm">Adult: {formatPrice(resort.adult_pass_price)}</span>
+                  <span className="font-semibold text-gray-800 text-xs">Adult: {formatPrice(resort.adult_pass_price)}</span>
                 )}
                 {resort.child_pass_price && (
-                  <span className="font-semibold text-gray-800 text-sm"> Child: {formatPrice(resort.child_pass_price)}</span>
+                  <span className="font-semibold text-gray-800 text-xs"> Child: {formatPrice(resort.child_pass_price)}</span>
                 )}
                 </div>
             </div>
@@ -178,8 +178,8 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
              
           {resort.website && (
             <div className="flex justify-between items-center py-1">
-              <span className="text-sm text-gray-600">Website:</span>
-              <span className="font-semibold text-gray-800 text-sm">
+              <span className="text-xs text-gray-600">Website:</span>
+              <span className="font-semibold text-gray-800 text-xs">
                 <a href={resort.website} target="_blank" rel="noopener noreferrer" className="text-resort-blue hover:text-resort-blue-hover">
                   Visit Site
                 </a>
@@ -198,7 +198,7 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
               href={resort.url} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-resort-blue no-underline text-sm font-medium text-center py-1 border border-resort-blue rounded transition-all duration-200 hover:bg-resort-blue hover:text-white"
+              className="text-resort-blue no-underline text-xs font-medium text-center py-1 border border-resort-blue rounded transition-all duration-200 hover:bg-resort-blue hover:text-white"
             >
               View Full Map →
             </a>
