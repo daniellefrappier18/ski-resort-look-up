@@ -12,11 +12,17 @@ export default {
         'resort-blue-hover': '#1e4080',
         'resort-blue-light': '#007bff',
         
-        // Difficulty colors
+        // Difficulty colors (full names for backgrounds)
         'difficulty-beginner': '#28a745',
         'difficulty-intermediate': '#007bff', 
-        'difficulty-advanced': '#ffc107',
-        'difficulty-expert': '#dc3545',
+        'difficulty-advanced': '#000000',
+     
+        
+        // Short difficulty aliases for text
+        'beginner': '#28a745',
+        'intermediate': '#007bff',
+        'advanced': '#000000',
+  
         
         // Danger/Warning colors
         'danger-primary': '#ff4444',

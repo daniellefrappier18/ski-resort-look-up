@@ -119,7 +119,7 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
 
           <div className="mt-2">
             <div className="flex items-center mb-2 gap-2">
-              <span className="text-xs min-w-20 text-gray-600">Beginner</span>
+              <span className="text-xs min-w-24 text-gray-600">Beginner <span className="text-beginner">●</span></span>
               <div className="flex-1 h-2 bg-gray-200 rounded overflow-hidden">
                 <div 
                   className="h-full transition-all duration-300 bg-difficulty-beginner"
@@ -132,7 +132,7 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
               </span>
             </div>
             <div className="flex items-center mb-2 gap-2">
-              <span className="text-xs min-w-20 text-gray-600">Intermediate</span>
+              <span className="text-xs min-w-24 text-gray-600">Intermediate <span className="text-intermediate">■</span></span>
               <div className="flex-1 h-2 bg-gray-200 rounded overflow-hidden">
                 <div 
                   className="h-full transition-all duration-300 bg-difficulty-intermediate"
@@ -145,7 +145,7 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
               </span>
             </div>
             <div className="flex items-center mb-2 gap-2">
-              <span className="text-xs min-w-20 text-gray-600">Advanced</span>
+              <span className="text-xs min-w-24 text-gray-600">Advanced <span className="text-advanced">◆</span></span>
               <div className="flex-1 h-2 bg-gray-200 rounded overflow-hidden">
                 <div 
                   className="h-full transition-all duration-300 bg-difficulty-advanced"
