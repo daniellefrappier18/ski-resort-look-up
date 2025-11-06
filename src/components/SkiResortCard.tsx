@@ -193,7 +193,7 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
           <div className="w-full h-36 border-2 border-gray-300 rounded-lg overflow-hidden relative bg-gray-100">
             <TrailMapImage resort={resort} />
           </div>
-          {resort.url && (
+          {resort.url && resort.trail_map_url && (
             <a 
               href={resort.url} 
               target="_blank" 
