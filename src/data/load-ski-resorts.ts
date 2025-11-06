@@ -70,8 +70,7 @@ function transformResortData(rawResort: RawSkiResort): SkiResort {
       lift.type === 't-bar'
     ).length;
 
-    // Check if all lifts are fixed-grip
-    const allFixedGrip = liftDetails.every(lift => lift.fixed_grip === true);
+    const fixedGripOnly = rawResort.fixed_grip_only ?? false;
     
     const total = chairlifts + gondolas + funiculars + surfaceLifts;
 
@@ -81,7 +80,7 @@ function transformResortData(rawResort: RawSkiResort): SkiResort {
       surfaceLifts,
       gondolas,
       funiculars,
-      fixedGripOnly: allFixedGrip
+      fixedGripOnly
     };
   };
 
