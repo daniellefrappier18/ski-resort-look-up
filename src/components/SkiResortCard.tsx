@@ -49,16 +49,20 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
   const formatPrice = (price: number) => `$${price}`;
   
   return (
-    <div className="bg-white border border-gray-300 rounded-lg p-6 shadow-card transition-all duration-200 hover:shadow-card-hover hover:-translate-y-0.5">
-      <div className="card-header">
-        <h3 className="text-resort-blue m-0 mb-1 text-xl">{resort.name}</h3>
+    <article 
+      className="bg-white border border-gray-300 rounded-lg p-6 shadow-card transition-all duration-200 hover:shadow-card-hover hover:-translate-y-0.5"
+      role="listitem"
+      aria-labelledby={`resort-${resort.id}`}
+    >
+      <header className="card-header">
+        <h3 id={`resort-${resort.id}`} className="text-resort-blue m-0 mb-1 text-xl">{resort.name}</h3>
         <p className="text-gray-600 m-0 mb-4 italic">{resort.location.city && `${resort.location.city}, `}{resort.location.state}</p>
-      </div>
+      </header>
 
       <div className="block md:flex gap-6 items-start">
         <div className="flex-1 w-full">
-        <div className="elevation-section">
-          <h4 className="text-gray-800 mt-4 mb-2 text-base border-b border-gray-200 pb-1">Mountain Stats</h4>
+        <section className="elevation-section" aria-labelledby={`stats-${resort.id}`}>
+          <h4 id={`stats-${resort.id}`} className="text-gray-800 mt-4 mb-2 text-base border-b border-gray-200 pb-1">Mountain Stats</h4>
           <div className="grid gap-2 mb-4" style={{gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))'}}>
             <div className="flex justify-between items-center py-1">
               <span className="text-xs text-gray-600">Summit:</span>
@@ -77,10 +81,10 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
               <span className="font-semibold text-gray-800 text-xs">{resort.skiableAcres !== null && resort.skiableAcres !== undefined ? resort.skiableAcres.toLocaleString() : 'N/A'}</span>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className="lifts-section">
-          <h4 className="text-gray-800 mt-4 mb-2 text-base border-b border-gray-200 pb-1">Lifts & Trails</h4>
+        <section className="lifts-section" aria-labelledby={`lifts-${resort.id}`}>
+          <h4 id={`lifts-${resort.id}`} className="text-gray-800 mt-4 mb-2 text-base border-b border-gray-200 pb-1">Lifts & Trails</h4>
           <div className="grid gap-2 mb-4" style={{gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))'}}>
             <div className="flex justify-between items-center py-1">
               <span className="text-xs text-gray-600">Total Lifts:</span>
@@ -109,10 +113,10 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
                 <div className="text-white px-2 py-1 rounded-xl text-xs font-bold border border-red-800 mt-2" style={{background: 'linear-gradient(45deg, #ff6b6b, #ff4757)', textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>☠️ Fixed-grip only ☠️</div>
               </div>
             )}
-        </div>
+        </section>
 
-        <div className="trails-breakdown">
-          <h4 className="text-gray-800 mt-4 mb-2 text-base border-b border-gray-200 pb-1">Slope Breakdown</h4>
+        <section className="trails-breakdown" aria-labelledby={`trails-${resort.id}`}>
+          <h4 id={`trails-${resort.id}`} className="text-gray-800 mt-4 mb-2 text-base border-b border-gray-200 pb-1">Slope Breakdown</h4>
           <div className="font-bold mb-2">
             <strong>Total Slopes: {resort.trails.totalKm ? `${resort.trails.totalKm} km` : '0%'}</strong>
           </div>
@@ -158,10 +162,12 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
               </span>
             </div>
           </div>
-        </div>
+        </section>
 
 
-        <div className="mt-4 pt-4 border-t border-gray-200">
+        <section className="pricing-section" aria-labelledby={`pricing-${resort.id}`}>
+          <h4 id={`pricing-${resort.id}`} className="sr-only">Pricing and Website</h4>
+          <div className="mt-4 pt-4 border-t border-gray-200">
           {(resort.adult_pass_price || resort.child_pass_price) && (
             <div className="py-1">
               <span className="text-xs text-gray-600">Lift Ticket Price(s):</span>
@@ -186,10 +192,12 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
               </span>
             </div>
           )}
-        </div>
+          </div>
+        </section>
         </div>
 
-        <div className="w-48 flex-shrink-0 flex flex-col gap-2">
+        <aside className="w-48 flex-shrink-0 flex flex-col gap-2" aria-labelledby={`map-${resort.id}`}>
+          <h4 id={`map-${resort.id}`} className="sr-only">Trail Map</h4>
           <div className="w-full h-36 border-2 border-gray-300 rounded-lg overflow-hidden relative bg-gray-100">
             <TrailMapImage resort={resort} />
           </div>
@@ -199,13 +207,14 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-resort-blue no-underline text-xs font-medium text-center py-1 border border-resort-blue rounded transition-all duration-200 hover:bg-resort-blue hover:text-white"
+              aria-label={`View full trail map for ${resort.name}`}
             >
               View Full Map →
             </a>
           )}
-        </div>
+        </aside>
       </div>
-    </div>
+    </article>
   );
 };
 

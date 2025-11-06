@@ -31,10 +31,10 @@ const SkiResortSearch: React.FC = () => {
 
   return (
     <div className="ski-resort-search">
-      <div className="text-center mb-8">
+      <header className="text-center mb-8">
         <h1 className="text-white mb-2 text-4xl">USA Ski Resort Explorer 🏂</h1>
-        <h2 className="text-white mb-2 text-xl">☠️ Find safe ski resorts nationwide & avoid fixed-grip death traps! ☠️</h2>
-      </div>
+        <p className="text-white mb-2 text-xl" role="complementary">☠️ Find safe ski resorts nationwide & avoid fixed-grip death traps! ☠️</p>
+      </header>
 
       <SearchForm
         searchTerm={searchTerm}
@@ -45,7 +45,7 @@ const SkiResortSearch: React.FC = () => {
       />
 
       {error && (
-        <div className="api-error">
+        <div className="api-error" role="alert" aria-live="assertive">
           <p className="text-red-700 p-4 bg-red-100 rounded">
             ⚠️ {error}
           </p>
@@ -53,25 +53,30 @@ const SkiResortSearch: React.FC = () => {
       )}
 
       {loading ? (
-        <div className="loading">
+        <div className="loading" role="status" aria-live="polite">
           <p className="text-center py-8 text-lg">
             🎿 Loading ski resort data...
           </p>
         </div>
       ) : (
         <>
-          <div className="mb-4 font-semibold p-2 text-white" style={{backgroundColor: 'rgba(4, 59, 92, 0.4)'}}>
+          <div className="mb-4 font-semibold p-2 text-white" style={{backgroundColor: 'rgba(4, 59, 92, 0.4)'}} role="status" aria-live="polite">
             <p>Found {filteredResorts.length} ski resort{filteredResorts.length !== 1 ? 's' : ''}</p>
           </div>
 
-          <div className="grid gap-6 mb-8" style={{gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))'}}>
-            {filteredResorts.map(resort => (
-              <SkiResortCard key={resort.id} resort={resort} />
-            ))}
-          </div>
+          <main id="main-content">
+            <section aria-label="Ski resort search results">
+              <h2 className="sr-only">Search Results</h2>
+              <div className="grid gap-6 mb-8" style={{gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))'}} role="list">
+                {filteredResorts.map(resort => (
+                  <SkiResortCard key={resort.id} resort={resort} />
+                ))}
+              </div>
+            </section>
+          </main>
 
           {filteredResorts.length === 0 && !loading && (
-            <div className="text-center py-12 text-gray-600">
+            <div className="text-center py-12 text-gray-600" role="status">
               <p className="text-lg">No ski resorts match your search criteria. Try adjusting your filters.</p>
             </div>
           )}

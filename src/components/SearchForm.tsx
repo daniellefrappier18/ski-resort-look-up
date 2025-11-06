@@ -24,10 +24,12 @@ const SearchForm: React.FC<SearchFormProps> = ({
   };
 
   return (
-    <div className="bg-gray-100 p-6 rounded-lg mb-8 border border-gray-300">
-      <div className="mb-6">
-        <label htmlFor="search" className="block mb-2 font-semibold text-gray-800">Search Resorts:</label>
-        <input
+    <form role="search" aria-label="Ski resort search and filters" className="bg-gray-100 p-6 rounded-lg mb-8 border border-gray-300">
+      <fieldset>
+        <legend className="sr-only">Search and Filter Ski Resorts</legend>
+        <div className="mb-6">
+          <label htmlFor="search" className="block mb-2 font-semibold text-gray-800">Search Resorts:</label>
+          <input
           id="search"
           type="text"
           placeholder="Search by resort name, city, or state..."
@@ -117,7 +119,8 @@ const SearchForm: React.FC<SearchFormProps> = ({
         </div>
       </div>
       <div className="flex mb-4">
-        <div className="filter-group flex items-center">
+        <fieldset className="filter-group flex items-center">
+          <legend className="sr-only">Safety Filters</legend>
           <label htmlFor="fixedGripOnly" className="rounded-lg p-4 border-2 border-red-400 cursor-pointer flex items-center mb-0" style={{background: 'linear-gradient(45deg, #ffebee, #ffcdd2)'}}>
             <input
               id="fixedGripOnly"
@@ -125,14 +128,15 @@ const SearchForm: React.FC<SearchFormProps> = ({
               checked={filters.fixedGripOnly || false}
               onChange={(e) => handleFilterChange('fixedGripOnly', e.target.checked ? true : undefined)}
               className="w-auto mr-2 mb-0"
+              aria-describedby="fixedGripDescription"
             />
             <span className="text-red-800 font-bold text-base">
               ☠️ DANGER ZONE: Fixed-grip lifts only ☠️ 
               <br />
-              <small className="text-red-700 font-normal italic">(No detachable chairs, gondolas, or trams - Hard to get off!)</small>
+              <small id="fixedGripDescription" className="text-red-700 font-normal italic">(No detachable chairs, gondolas, or trams - Hard to get off!)</small>
             </span>
           </label>
-        </div>
+        </fieldset>
       </div>
 
       <button 
@@ -145,7 +149,8 @@ const SearchForm: React.FC<SearchFormProps> = ({
       >
         Clear All Filters
       </button>
-    </div>
+      </fieldset>
+    </form>
   );
 };
 
