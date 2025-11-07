@@ -8,21 +8,20 @@
 
 ## Why This Exists 🚡
 
-- **Personal Accessibility**: Some snowboard and skiers have difficulty with fixed-grip lifts (balance, timing, physical limitations)
+- **Personal Accessibility**: Some snowboarders and skiers have difficulty with fixed-grip lifts (balance, timing, physical limitations)
 - **Safety First**: Avoid resorts with only old, hard-to-dismount lifts
-- **No Other Solution**: Major ski sites don't offer this crucial filter
-- **Real Data**: Scraped from actual resort pages, not guesswork
+- **No Other Solution**: Major ski sites don't offer this crucial filter (at least that I've found)
 
 ## Features
 
 - ☠️ **DANGER ZONE Filter**: Instantly identify and avoid fixed-grip-only death traps with dramatic skull warnings
 - 🏔️ **Mountain Stats**: Summit elevation, base elevation, vertical drop, and skiable acres
 - 🚡 **Smart Lift Analysis**: Detachable chairs, gondolas, trams vs. sketchy fixed-grip lifts
-- ⛷️ **Slope Data**: Actual slope distances in kilometers (not unreliable trail counts)
+- ⛷️ **Slope Data**: Actual slope distances in kilometers 
 - 🔍 **Advanced Filtering**: Filter by state, elevation, lift type, slope distance
-- 📊 **Real Data**: Scraped directly from skiresort.info for accuracy
+- 📊 **Real Data**: Scraped from skiresort.info 
 - 📱 **Mobile Friendly**: Plan your safe ski trips anywhere
-- 🇺🇸 **Complete USA Coverage**: 551 resorts and counting
+- 🇺🇸 **Complete USA Coverage**: 323 resorts and counting
 
 ## Getting Started
 
@@ -98,4 +97,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 Happy riding and skiing! 🏂 ⛷️
-```
