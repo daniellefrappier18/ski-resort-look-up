@@ -123,40 +123,40 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
 
           <div className="mt-2">
             <div className="flex items-center mb-2 gap-2">
-              <span className="text-xs min-w-24 text-gray-600">Beginner <span className="text-beginner">●</span></span>
+              <span className="text-xs min-w-16 sm:min-w-24 text-gray-600">Beginner <span className="text-beginner">●</span></span>
               <div className="flex-1 h-2 bg-gray-200 rounded overflow-hidden">
                 <div 
                   className="h-full transition-all duration-300 bg-difficulty-beginner"
                   style={{ width: `${((resort.trails.beginnerKm ?? 0) / (resort.trails.totalKm ?? 1)) * 100}%` }}
                 ></div>
               </div>
-              <span className="text-xs font-semibold min-w-6 text-right text-gray-800">
+              <span className="text-xs font-semibold min-w-4 sm:min-w-6 text-right text-gray-800">
                 {resort.trails.beginnerKm ? `${resort.trails.beginnerKm} km` : '0%'}
                 {resort.trails.beginnerKm && resort.trails.totalKm ? ` (${Math.round(((resort.trails.beginnerKm / resort.trails.totalKm) * 100))}%)` : ''}
               </span>
             </div>
             <div className="flex items-center mb-2 gap-2">
-              <span className="text-xs min-w-24 text-gray-600">Intermediate <span className="text-intermediate">■</span></span>
+              <span className="text-xs min-w-16 sm:min-w-24 text-gray-600">Intermediate <span className="text-intermediate">■</span></span>
               <div className="flex-1 h-2 bg-gray-200 rounded overflow-hidden">
                 <div 
                   className="h-full transition-all duration-300 bg-difficulty-intermediate"
                   style={{ width: `${((resort.trails.intermediateKm ?? 0) / (resort.trails.totalKm ?? 1)) * 100}%` }}
                 ></div>
               </div>
-              <span className="text-xs font-semibold min-w-6 text-right text-gray-800">
+              <span className="text-xs font-semibold min-w-4 sm:min-w-6 text-right text-gray-800">
                 {resort.trails.intermediateKm ? `${resort.trails.intermediateKm} km` : '0%'}
                 {resort.trails.intermediateKm && resort.trails.totalKm ? ` (${Math.round(((resort.trails.intermediateKm / resort.trails.totalKm) * 100))}%)` : ''}
               </span>
             </div>
             <div className="flex items-center mb-2 gap-2">
-              <span className="text-xs min-w-24 text-gray-600">Advanced <span className="text-advanced">◆</span></span>
+              <span className="text-xs min-w-16 sm:min-w-24 text-gray-600">Advanced <span className="text-advanced">◆</span></span>
               <div className="flex-1 h-2 bg-gray-200 rounded overflow-hidden">
                 <div 
                   className="h-full transition-all duration-300 bg-difficulty-advanced"
                   style={{ width: `${((resort.trails.advancedKm ?? 0) / (resort.trails.totalKm ?? 1)) * 100}%` }}
                 ></div>
               </div>
-              <span className="text-xs font-semibold min-w-6 text-right text-gray-800">
+              <span className="text-xs font-semibold min-w-4 sm:min-w-6 text-right text-gray-800">
                 {resort.trails.advancedKm ? `${resort.trails.advancedKm} km` : '0%'}
                 {resort.trails.advancedKm && resort.trails.totalKm ? ` (${Math.round(((resort.trails.advancedKm / resort.trails.totalKm) * 100))}%)` : ''}
               </span>
@@ -196,7 +196,7 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
         </section>
         </div>
 
-        <aside className="w-48 flex-shrink-0 flex flex-col gap-2" aria-labelledby={`map-${resort.id}`}>
+        <aside className="w-full md:w-48 md:flex-shrink-0 flex flex-col gap-2 mt-4 md:mt-0" aria-labelledby={`map-${resort.id}`}>
           <h4 id={`map-${resort.id}`} className="sr-only">Trail Map</h4>
           <div className="w-full h-36 border-2 border-gray-300 rounded-lg overflow-hidden relative bg-gray-100">
             <TrailMapImage resort={resort} />

@@ -30,7 +30,7 @@ const SkiResortSearch: React.FC = () => {
   );
 
   return (
-    <div className="ski-resort-search">
+    <div className="ski-resort-search overflow-x-hidden">
       <header className="text-center mb-8">
         <h1 className="text-white mb-2 text-4xl">USA Ski Resort Explorer 🏂</h1>
         <p className="text-white mb-2 text-xl" role="complementary">☠️ Find safe ski resorts nationwide & avoid fixed-grip death traps! ☠️</p>
@@ -67,7 +67,7 @@ const SkiResortSearch: React.FC = () => {
           <main id="main-content">
             <section aria-label="Ski resort search results">
               <h2 className="sr-only">Search Results</h2>
-              <div className="grid gap-6 mb-8" style={{gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))'}} role="list">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6 mb-8" role="list">
                 {filteredResorts.map(resort => (
                   <SkiResortCard key={resort.id} resort={resort} />
                 ))}

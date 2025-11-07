@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Prevent horizontal overflow on small screens */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 @layer components {
   /* Custom animations */
   .animate-danger-pulse {
@@ -48,5 +57,15 @@
     width: 100% !important;
     max-width: 300px !important;
     align-self: center !important;
+  }
+
+  /* Ensure cards don't overflow on mobile */
+  .ski-resort-search {
+    padding: 0 0.5rem;
+  }
+
+  /* Prevent any element from being wider than viewport */
+  * {
+    max-width: 100%;
   }
 }
