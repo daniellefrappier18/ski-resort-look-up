@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import type { SearchFilters } from '../types/ski-resort';
 import { useSkiResortsGraphQL } from '../hooks/useSkiResortsGraphQL';
+import { useResortLists } from '../hooks/useResortLists';
 import SkiResortCard from './SkiResortCard';
 import SearchForm from './SearchForm';
+import ResortListPanel from './ResortListPanel';
 
 const SkiResortSearch: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
+  const [listError, setListError] = useState<string | null>(null);
+  const { lists, readonly, hasItems, addToList, removeFromList, updateNote, getListForResort, getShareUrl } = useResortLists();
 
   const searchTerm = searchParams.get('q') ?? '';
 
@@ -66,8 +70,16 @@ const SkiResortSearch: React.FC = () => {
     searchTerm || undefined
   );
 
+  const handleAddToList = (list: 'see' | 'avoid', resort: { id: string; name: string }) => {
+    const result = addToList(list, resort);
+    if (result.error) {
+      setListError(result.error);
+      setTimeout(() => setListError(null), 4000);
+    }
+  };
+
   return (
-    <div className="ski-resort-search overflow-x-hidden">
+    <div className={`ski-resort-search overflow-x-hidden${hasItems ? ' pb-16' : ''}`}>
       <header className="text-center mb-8">
         <h1 className="text-white mb-2 text-4xl">USA Ski Resort Explorer 🏂</h1>
         <p className="text-white mb-2 text-xl" role="complementary">☠️ Find safe ski resorts nationwide & avoid fixed-grip death traps! ☠️</p>
@@ -80,6 +92,22 @@ const SkiResortSearch: React.FC = () => {
         onFiltersChange={setFilters}
         states={states}
       />
+
+      {hasItems && (
+        <ResortListPanel
+          lists={lists}
+          readonly={readonly}
+          onRemove={removeFromList}
+          onNoteChange={updateNote}
+          getShareUrl={getShareUrl}
+        />
+      )}
+
+      {listError && (
+        <div role="alert" aria-live="assertive" className="mb-4 p-3 bg-amber-50 border border-amber-300 text-amber-800 rounded text-sm">
+          ⚠️ {listError}
+        </div>
+      )}
 
       {error && (
         <div className="api-error" role="alert" aria-live="assertive">
@@ -106,7 +134,14 @@ const SkiResortSearch: React.FC = () => {
               <h2 className="sr-only">Search Results</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6 mb-8" role="list">
                 {filteredResorts.map(resort => (
-                  <SkiResortCard key={resort.id} resort={resort} />
+                  <SkiResortCard
+                    key={resort.id}
+                    resort={resort}
+                    currentList={getListForResort(resort.id)}
+                    onAddToList={list => handleAddToList(list, { id: resort.id, name: resort.name })}
+                    onRemoveFromList={() => removeFromList(getListForResort(resort.id)!, resort.id)}
+                    readonly={readonly}
+                  />
                 ))}
               </div>
             </section>

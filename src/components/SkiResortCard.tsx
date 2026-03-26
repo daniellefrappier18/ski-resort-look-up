@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import { ChevronDown } from 'lucide-react';
 import type { SkiResort } from '../types/ski-resort';
 
 interface SkiResortCardProps {
   resort: SkiResort;
+  currentList?: 'see' | 'avoid' | null;
+  onAddToList?: (list: 'see' | 'avoid') => void;
+  onRemoveFromList?: () => void;
+  readonly?: boolean;
 }
 
 // Component for handling trail map image loading and fallbacks
@@ -45,11 +50,80 @@ function TrailMapImage({ resort }: { resort: SkiResort }) {
   );
 }
 
-const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
+function AddToListButton({ currentList, onAddToList, onRemoveFromList }: {
+  currentList: 'see' | 'avoid' | null;
+  onAddToList: (list: 'see' | 'avoid') => void;
+  onRemoveFromList: () => void;
+}) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  if (currentList) {
+    const label = currentList === 'see' ? 'Places to See' : 'Places to Avoid';
+    const color = currentList === 'see' ? 'bg-green-100 text-green-800 border-green-300' : 'bg-red-100 text-red-800 border-red-300';
+    return (
+      <div className="flex flex-col gap-1">
+        <span className={`text-xs font-medium text-center px-2 py-1 rounded border ${color}`}>
+          ✓ On {label}
+        </span>
+        <button
+          onClick={onRemoveFromList}
+          className="text-xs text-gray-500 hover:text-red-600 transition-colors text-center"
+        >
+          Remove
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="relative" ref={ref}>
+      <button
+        onClick={() => setOpen(o => !o)}
+        className="w-full flex items-center justify-center gap-1 text-xs border border-gray-300 rounded px-2 py-1.5 bg-white hover:bg-gray-50 transition-colors text-gray-700"
+      >
+        Add to List <ChevronDown size={12} />
+      </button>
+      {open && (
+        <div className="absolute bottom-full mb-1 left-0 right-0 bg-white border border-gray-200 rounded shadow-lg z-10 overflow-hidden">
+          <button
+            onClick={() => { onAddToList('see'); setOpen(false); }}
+            className="w-full text-left text-xs px-3 py-2 hover:bg-green-50 text-green-800 font-medium"
+          >
+            Places to See
+          </button>
+          <button
+            onClick={() => { onAddToList('avoid'); setOpen(false); }}
+            className="w-full text-left text-xs px-3 py-2 hover:bg-red-50 text-red-800 font-medium"
+          >
+            Places to Avoid
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+const SkiResortCard: React.FC<SkiResortCardProps> = ({
+  resort,
+  currentList = null,
+  onAddToList,
+  onRemoveFromList,
+  readonly = false,
+}) => {
   const formatPrice = (price: number) => `$${price}`;
   
   return (
-    <article 
+    <article
+      id={`card-${resort.id}`}
       className="bg-white border border-gray-300 rounded-lg p-6 shadow-card transition-all duration-200 hover:shadow-card-hover hover:-translate-y-0.5"
       role="listitem"
       aria-labelledby={`resort-${resort.id}`}
@@ -202,15 +276,22 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({ resort }) => {
             <TrailMapImage resort={resort} />
           </div>
           {resort.url && resort.trail_map_url && (
-            <a 
-              href={resort.url} 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href={resort.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-resort-blue no-underline text-xs font-medium text-center py-1 border border-resort-blue rounded transition-all duration-200 hover:bg-resort-blue hover:text-white"
               aria-label={`View full trail map for ${resort.name}`}
             >
               View Full Map →
             </a>
+          )}
+          {!readonly && onAddToList && onRemoveFromList && (
+            <AddToListButton
+              currentList={currentList}
+              onAddToList={onAddToList}
+              onRemoveFromList={onRemoveFromList}
+            />
           )}
         </aside>
       </div>
