@@ -1,5 +1,6 @@
 import { useMemo, useCallback } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { usaSkiResorts } from '../data/load-ski-resorts';
 
 export interface ListEntry {
   id: string;
@@ -12,13 +13,31 @@ export interface ResortLists {
   avoid: ListEntry[];
 }
 
+// Compact URL format — short keys, no name stored
+interface StoredEntry { i: string; n: string; }
+interface StoredLists { s: StoredEntry[]; a: StoredEntry[]; }
+
+const nameById: Record<string, string> = Object.fromEntries(
+  usaSkiResorts.map(r => [r.id, r.name])
+);
+
 function encodeLists(lists: ResortLists): string {
-  return btoa(encodeURIComponent(JSON.stringify(lists)));
+  const stored: StoredLists = {
+    s: lists.see.map(e => ({ i: e.id, n: e.note })),
+    a: lists.avoid.map(e => ({ i: e.id, n: e.note })),
+  };
+  return btoa(encodeURIComponent(JSON.stringify(stored)));
 }
 
 function decodeLists(encoded: string): ResortLists {
   try {
-    return JSON.parse(decodeURIComponent(atob(encoded)));
+    const stored: StoredLists = JSON.parse(decodeURIComponent(atob(encoded)));
+    const toEntry = (e: StoredEntry): ListEntry => ({
+      id: e.i,
+      name: nameById[e.i] ?? e.i,
+      note: e.n ?? '',
+    });
+    return { see: stored.s.map(toEntry), avoid: stored.a.map(toEntry) };
   } catch {
     return { see: [], avoid: [] };
   }
