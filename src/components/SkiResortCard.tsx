@@ -8,6 +8,7 @@ interface SkiResortCardProps {
   onAddToList?: (list: 'see' | 'avoid') => void;
   onRemoveFromList?: () => void;
   readonly?: boolean;
+  compact?: boolean;
 }
 
 // Component for handling trail map image loading and fallbacks
@@ -118,6 +119,7 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({
   onAddToList,
   onRemoveFromList,
   readonly = false,
+  compact = false,
 }) => {
   const formatPrice = (price: number) => `$${price}`;
   
@@ -133,7 +135,7 @@ const SkiResortCard: React.FC<SkiResortCardProps> = ({
         <p className="text-gray-600 m-0 mb-4 italic">{resort.location.city && `${resort.location.city}, `}{resort.location.state}</p>
       </header>
 
-      <div className="block md:flex gap-6 items-start">
+      <div className={`block gap-6 items-start ${compact ? '' : 'md:flex'}`}>
         <div className="flex-1 w-full">
         <section className="elevation-section" aria-labelledby={`stats-${resort.id}`}>
           <h4 id={`stats-${resort.id}`} className="text-gray-800 mt-4 mb-2 text-base border-b border-gray-200 pb-1">Mountain Stats</h4>

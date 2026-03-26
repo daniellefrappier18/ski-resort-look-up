@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import type { SearchFilters } from '../types/ski-resort';
 import { useSkiResortsGraphQL } from '../hooks/useSkiResortsGraphQL';
@@ -10,7 +10,14 @@ import ResortListPanel from './ResortListPanel';
 const SkiResortSearch: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [listError, setListError] = useState<string | null>(null);
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const { lists, readonly, hasItems, addToList, removeFromList, updateNote, getListForResort, getShareUrl } = useResortLists();
+
+  // Auto-open drawer when the first resort is added
+  useEffect(() => {
+    if (hasItems && !drawerOpen) setDrawerOpen(true);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [hasItems]);
 
   const searchTerm = searchParams.get('q') ?? '';
 
@@ -79,7 +86,7 @@ const SkiResortSearch: React.FC = () => {
   };
 
   return (
-    <div className={`ski-resort-search overflow-x-hidden${hasItems ? ' pb-16' : ''}`}>
+    <div className={`ski-resort-search overflow-x-hidden transition-all duration-300 ease-in-out${hasItems && drawerOpen ? ' mr-80' : ''}`}>
       <header className="text-center mb-8">
         <h1 className="text-white mb-2 text-4xl">USA Ski Resort Explorer 🏂</h1>
         <p className="text-white mb-2 text-xl" role="complementary">☠️ Find safe ski resorts nationwide & avoid fixed-grip death traps! ☠️</p>
@@ -97,6 +104,8 @@ const SkiResortSearch: React.FC = () => {
         <ResortListPanel
           lists={lists}
           readonly={readonly}
+          open={drawerOpen}
+          onToggle={() => setDrawerOpen(o => !o)}
           onRemove={removeFromList}
           onNoteChange={updateNote}
           getShareUrl={getShareUrl}
@@ -132,7 +141,7 @@ const SkiResortSearch: React.FC = () => {
           <main id="main-content">
             <section aria-label="Ski resort search results">
               <h2 className="sr-only">Search Results</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6 mb-8" role="list">
+              <div className={`grid gap-6 mb-8 ${drawerOpen ? 'grid-cols-1' : 'grid-cols-1 lg:grid-cols-2'}`} role="list">
                 {filteredResorts.map(resort => (
                   <SkiResortCard
                     key={resort.id}
@@ -141,6 +150,7 @@ const SkiResortSearch: React.FC = () => {
                     onAddToList={list => handleAddToList(list, { id: resort.id, name: resort.name })}
                     onRemoveFromList={() => removeFromList(getListForResort(resort.id)!, resort.id)}
                     readonly={readonly}
+                    compact={drawerOpen}
                   />
                 ))}
               </div>

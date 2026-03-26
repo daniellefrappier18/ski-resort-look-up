@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, Copy, Check, X } from 'lucide-react';
+import { Copy, Check, X, List } from 'lucide-react';
 import type { ListEntry, ResortLists } from '../hooks/useResortLists';
 
 interface ResortListPanelProps {
   lists: ResortLists;
   readonly: boolean;
+  open: boolean;
+  onToggle: () => void;
   onRemove: (list: 'see' | 'avoid', id: string) => void;
   onNoteChange: (list: 'see' | 'avoid', id: string, note: string) => void;
   getShareUrl: (readonlyMode: boolean) => string;
@@ -43,7 +45,7 @@ function ListSection({
   if (entries.length === 0) return null;
 
   return (
-    <div className="mb-4">
+    <div className="mb-5">
       <h3 className={`font-semibold text-sm mb-2 pb-1 border-b ${colorClasses.header}`}>
         {title}{' '}
         <span className={`ml-1 text-xs px-1.5 py-0.5 rounded-full ${colorClasses.badge}`}>
@@ -95,11 +97,12 @@ function ListSection({
 const ResortListPanel: React.FC<ResortListPanelProps> = ({
   lists,
   readonly,
+  open,
+  onToggle,
   onRemove,
   onNoteChange,
   getShareUrl,
 }) => {
-  const [expanded, setExpanded] = useState(true);
   const [shareReadonly, setShareReadonly] = useState(true);
   const [copied, setCopied] = useState(false);
 
@@ -113,85 +116,77 @@ const ResortListPanel: React.FC<ResortListPanelProps> = ({
   const totalAvoid = lists.avoid.length;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50">
-      {/* Always-visible bar / handle */}
+    <div
+      className={`fixed right-0 top-0 h-full w-80 bg-white border-l border-gray-300 shadow-2xl z-50 transition-transform duration-300 ease-in-out ${open ? 'translate-x-0' : 'translate-x-full'}`}
+    >
+      {/* Floating tab trigger */}
       <button
-        onClick={() => setExpanded(e => !e)}
-        className="w-full flex items-center justify-between px-4 py-3 bg-white border-t border-gray-300 shadow-md hover:bg-gray-50 transition-colors"
-        aria-expanded={expanded}
+        onClick={onToggle}
+        className="absolute top-1/2 -translate-y-1/2 -translate-x-full left-0 flex flex-col items-center gap-1.5 bg-white border border-r-0 border-gray-300 rounded-l-lg px-2 py-4 shadow-md hover:bg-gray-50 transition-colors"
         aria-label="Toggle resort lists"
       >
-        <span className="flex items-center gap-3 text-sm font-semibold text-gray-800">
-          My Resort Lists
-          {totalSee > 0 && (
-            <span className="text-xs font-normal px-2 py-0.5 bg-green-100 text-green-800 rounded-full">
-              {totalSee} to see
-            </span>
-          )}
-          {totalAvoid > 0 && (
-            <span className="text-xs font-normal px-2 py-0.5 bg-red-100 text-red-800 rounded-full">
-              {totalAvoid} to avoid
-            </span>
-          )}
-        </span>
-        {expanded ? <ChevronDown size={16} /> : <ChevronUp size={16} />}
+        <List size={16} className="text-gray-600" />
+        {totalSee > 0 && (
+          <span className="text-xs font-semibold px-1 py-0.5 bg-green-100 text-green-800 rounded">
+            {totalSee}
+          </span>
+        )}
+        {totalAvoid > 0 && (
+          <span className="text-xs font-semibold px-1 py-0.5 bg-red-100 text-red-800 rounded">
+            {totalAvoid}
+          </span>
+        )}
       </button>
 
-      {/* Expandable drawer content */}
-      <div
-        className="overflow-hidden transition-all duration-300 ease-in-out"
-        style={{ maxHeight: expanded ? '420px' : '0px' }}
-      >
-        <div className="bg-white border-x border-b border-gray-300 shadow-xl overflow-y-auto" style={{ maxHeight: '420px' }}>
-          <div className="p-4 max-w-4xl mx-auto">
-            {readonly && (
-              <div className="mb-3 text-xs text-center text-gray-500 italic bg-gray-100 rounded px-3 py-1.5">
-                Viewing a shared list (read-only)
-              </div>
-            )}
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <ListSection
-                title="Places to See"
-                entries={lists.see}
-                readonly={readonly}
-                onRemove={id => onRemove('see', id)}
-                onNoteChange={(id, note) => onNoteChange('see', id, note)}
-                color="green"
-              />
-              <ListSection
-                title="Places to Avoid"
-                entries={lists.avoid}
-                readonly={readonly}
-                onRemove={id => onRemove('avoid', id)}
-                onNoteChange={(id, note) => onNoteChange('avoid', id, note)}
-                color="red"
-              />
-            </div>
-
-            {!readonly && (
-              <div className="mt-3 pt-3 border-t border-gray-200 flex flex-wrap items-center gap-4">
-                <p className="text-xs font-medium text-gray-700">Share this list:</p>
-                <label className="flex items-center gap-2 text-xs text-gray-600 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={shareReadonly}
-                    onChange={e => setShareReadonly(e.target.checked)}
-                    className="w-auto"
-                  />
-                  Read-only
-                </label>
-                <button
-                  onClick={handleCopy}
-                  className="flex items-center gap-1.5 text-xs bg-resort-blue text-white px-3 py-1.5 rounded hover:opacity-90 transition-opacity"
-                >
-                  {copied ? <Check size={12} /> : <Copy size={12} />}
-                  {copied ? 'Copied!' : 'Copy Link'}
-                </button>
-              </div>
-            )}
-          </div>
+      {/* Drawer content */}
+      <div className="h-full flex flex-col">
+        <div className="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
+          <h2 className="font-semibold text-gray-800 text-sm">My Resort Lists</h2>
+          {readonly && (
+            <span className="text-xs text-gray-500 italic">read-only</span>
+          )}
         </div>
+
+        <div className="flex-1 overflow-y-auto p-4">
+          <ListSection
+            title="Places to See"
+            entries={lists.see}
+            readonly={readonly}
+            onRemove={id => onRemove('see', id)}
+            onNoteChange={(id, note) => onNoteChange('see', id, note)}
+            color="green"
+          />
+          <ListSection
+            title="Places to Avoid"
+            entries={lists.avoid}
+            readonly={readonly}
+            onRemove={id => onRemove('avoid', id)}
+            onNoteChange={(id, note) => onNoteChange('avoid', id, note)}
+            color="red"
+          />
+        </div>
+
+        {!readonly && (
+          <div className="px-4 py-3 border-t border-gray-200 bg-gray-50">
+            <p className="text-xs font-medium text-gray-700 mb-2">Share this list:</p>
+            <label className="flex items-center gap-2 text-xs text-gray-600 mb-2 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={shareReadonly}
+                onChange={e => setShareReadonly(e.target.checked)}
+                className="w-auto"
+              />
+              Share as read-only
+            </label>
+            <button
+              onClick={handleCopy}
+              className="flex items-center gap-1.5 text-xs bg-resort-blue text-white px-3 py-1.5 rounded hover:opacity-90 transition-opacity"
+            >
+              {copied ? <Check size={12} /> : <Copy size={12} />}
+              {copied ? 'Copied!' : 'Copy Link'}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
