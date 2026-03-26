@@ -141,7 +141,7 @@ const SkiResortSearch: React.FC = () => {
           <main id="main-content">
             <section aria-label="Ski resort search results">
               <h2 className="sr-only">Search Results</h2>
-              <div className={`grid gap-6 mb-8 ${drawerOpen ? 'grid-cols-1' : 'grid-cols-1 lg:grid-cols-2'}`} role="list">
+              <div className="grid gap-6 mb-8 grid-cols-1 lg:grid-cols-2" role="list">
                 {filteredResorts.map(resort => (
                   <SkiResortCard
                     key={resort.id}
@@ -150,7 +150,6 @@ const SkiResortSearch: React.FC = () => {
                     onAddToList={list => handleAddToList(list, { id: resort.id, name: resort.name })}
                     onRemoveFromList={() => removeFromList(getListForResort(resort.id)!, resort.id)}
                     readonly={readonly}
-                    compact={drawerOpen}
                   />
                 ))}
               </div>
