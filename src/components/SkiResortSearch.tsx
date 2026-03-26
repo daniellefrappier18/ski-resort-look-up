@@ -1,13 +1,49 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSearchParams } from 'react-router-dom';
 import type { SearchFilters } from '../types/ski-resort';
 import { useSkiResortsGraphQL } from '../hooks/useSkiResortsGraphQL';
 import SkiResortCard from './SkiResortCard';
 import SearchForm from './SearchForm';
 
 const SkiResortSearch: React.FC = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [filters, setFilters] = useState<SearchFilters>({});
-  
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const searchTerm = searchParams.get('q') ?? '';
+
+  const filters: SearchFilters = {
+    state: searchParams.get('state') ?? undefined,
+    minElevation: searchParams.get('minElevation') ? Number(searchParams.get('minElevation')) : undefined,
+    maxElevation: searchParams.get('maxElevation') ? Number(searchParams.get('maxElevation')) : undefined,
+    minLifts: searchParams.get('minLifts') ? Number(searchParams.get('minLifts')) : undefined,
+    minSlopeKm: searchParams.get('minSlopeKm') ? Number(searchParams.get('minSlopeKm')) : undefined,
+    minSkiableAcres: searchParams.get('minSkiableAcres') ? Number(searchParams.get('minSkiableAcres')) : undefined,
+    fixedGripOnly: searchParams.get('fixedGripOnly') === 'true' ? true : undefined,
+  };
+
+  const setSearchTerm = (value: string) => {
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev);
+      if (value) next.set('q', value); else next.delete('q');
+      return next;
+    });
+  };
+
+  const setFilters = (value: SearchFilters | ((prev: SearchFilters) => SearchFilters)) => {
+    const next = typeof value === 'function' ? value(filters) : value;
+    setSearchParams(prev => {
+      const params = new URLSearchParams(prev);
+      const set = (key: string, val: string | undefined) => val ? params.set(key, val) : params.delete(key);
+      set('state', next.state);
+      set('minElevation', next.minElevation?.toString());
+      set('maxElevation', next.maxElevation?.toString());
+      set('minLifts', next.minLifts?.toString());
+      set('minSlopeKm', next.minSlopeKm?.toString());
+      set('minSkiableAcres', next.minSkiableAcres?.toString());
+      set('fixedGripOnly', next.fixedGripOnly ? 'true' : undefined);
+      return params;
+    });
+  };
+
   // Convert SearchFilters to GraphQL ResortFilters format
   const graphqlFilters = {
     state: filters.state,
@@ -15,7 +51,8 @@ const SkiResortSearch: React.FC = () => {
     maxElevation: filters.maxElevation,
     minLifts: filters.minLifts,
     minSlopeKm: filters.minSlopeKm,
-    fixedGripOnly: filters.fixedGripOnly
+    minSkiableAcres: filters.minSkiableAcres,
+    fixedGripOnly: filters.fixedGripOnly,
   };
 
   // Fetch resorts from GraphQL

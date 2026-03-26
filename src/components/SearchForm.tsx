@@ -1,4 +1,5 @@
 import React from 'react';
+import { ChevronDown } from 'lucide-react';
 import type { SearchFilters } from '../types/ski-resort';
 
 interface SearchFormProps {
@@ -42,19 +43,22 @@ const SearchForm: React.FC<SearchFormProps> = ({
       <div className="grid gap-6 mb-4" style={{gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))'}}>
         <div className="filter-group">
           <label htmlFor="state" className="block mb-1 font-medium text-gray-600 text-sm">State:</label>
-          <select
-            id="state"
-            value={filters.state || ''}
-            onChange={(e) => handleFilterChange('state', e.target.value)}
-            className="w-full p-2 border border-gray-400 rounded text-sm"
-          >
-            <option value="">All States</option>
-            {states.map(state => (
-              <option key={state} value={state}>
-                {state}
-              </option>
-            ))}
-          </select>
+          <div className="relative">
+            <select
+              id="state"
+              value={filters.state || ''}
+              onChange={(e) => handleFilterChange('state', e.target.value)}
+              className="w-full p-2 border border-gray-400 rounded text-sm appearance-none pr-8"
+            >
+              <option value="">All States</option>
+              {states.map(state => (
+                <option key={state} value={state}>
+                  {state}
+                </option>
+              ))}
+            </select>
+            <ChevronDown className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-gray-500" size={16} />
+          </div>
         </div>
 
         <div className="filter-group">
