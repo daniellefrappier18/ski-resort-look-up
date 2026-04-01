@@ -86,7 +86,7 @@ const SkiResortSearch: React.FC = () => {
   };
 
   return (
-    <div className={`ski-resort-search overflow-x-hidden transition-all duration-300 ease-in-out${hasItems && drawerOpen ? ' mr-80' : ''}`}>
+    <div className={`ski-resort-search overflow-x-hidden transition-all duration-300 ease-in-out${hasItems && drawerOpen ? ' sm:mr-80' : ''}`}>
       <header className="text-center mb-8">
         <h1 className="text-white mb-2 text-4xl">USA Ski Resort Explorer 🏂</h1>
         <p className="text-white mb-2 text-xl" role="complementary">☠️ Find safe ski resorts nationwide & avoid fixed-grip death traps! ☠️</p>
